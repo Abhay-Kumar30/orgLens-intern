@@ -7,12 +7,7 @@
 }
 html{scroll-behavior:smooth;;;}
 
-body {
-    font-family: Arial, sans-serif;
-
-
-}
-
+body {font-family: Arial, sans-serif;}
 
 /* navbars--------------------------- */
 .navbar {display: flex;justify-content: space-between;align-items: center;z-index:10;padding: 18px 20px;position:sticky;top:0;background:white;-webkit-box-shadow: 0px 7px 5px 0px rgba(227,227,227,1);-moz-box-shadow: 0px 7px 5px 0px rgba(227,227,227,1);box-shadow: 0px 7px 5px 0px rgba(227,227,227,1);}
@@ -351,8 +346,8 @@ footer hr{border:1px dotted rgba(128, 128, 128, 0.623);margin:20px auto;;width:1
 }
 
 /* terms-and-condition */
-.termsAndCondition{line-height:30px;min-height:100vh;}
-.termsAndCondition .box{width:70%;border-radius:10px;position:sticky;top:130px;margin:40px auto;color:white;padding:0 30px 40px 30px}
+.termsAndCondition{line-height:30px;min-height:100vh;z-index:-101;}
+.termsAndCondition .termsAndConditionBox{width:70%;border-radius:10px;position:sticky;top:130px;margin:40px auto;color:white;padding:0 30px 40px 30px}
 .termsAndCondition  h2{border-radius:10px;margin:10px;position:sticky;top:80px;padding:10px 30px;}
 
 .termsAndCondition .firstBox{background:rgb(246, 184, 0);;}
@@ -361,13 +356,13 @@ footer hr{border:1px dotted rgba(128, 128, 128, 0.623);margin:20px auto;;width:1
 .termsAndCondition .secondBox{background:rgb(7, 93, 115);}
 .termsAndCondition .secondBox h2{background:rgb(6, 134, 167);}
 @media (max-width:589px){
-  .termsAndCondition .box{width:90%;}
+  .termsAndCondition .termsAndConditionBox{width:90%;}
 }
 
 /* privacyPolicyPage */
 .privacyPolicyPage{line-height:30px;min-height:100vh;}
 
-.privacyPolicyPage .box{width:70%;border-radius:10px;position:sticky;top:130px;margin:0 auto;color:white;padding:0 30px 40px 30px}
+.privacyPolicyPage .privacyPolicyPageBox{width:70%;border-radius:10px;position:sticky;top:130px;margin:0 auto;color:white;padding:0 30px 40px 30px}
 .privacyPolicyPage h2{border-radius:10px;margin:10px;position:sticky;top:80px;padding:10px 30px;}
 
 .privacyPolicyPage .firstBox{background:rgb(6, 131, 173);}
@@ -376,6 +371,6 @@ footer hr{border:1px dotted rgba(128, 128, 128, 0.623);margin:20px auto;;width:1
 .privacyPolicyPage .secondBox{background:rgb(255, 204, 0);}
 .privacyPolicyPage .secondBox h2{background:rgb(235, 188, 0);}
 @media (max-width:589px){
-  .privacyPolicyPage .box{width:90%;}
+  .privacyPolicyPage .privacyPolicyPageBox{width:90%;}
   .privacyPolicyPage h2{margin:10px 0;}
 }
