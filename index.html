@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- //for animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- For fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+   
+</head>
+<body id="body">
+
+    
+  <!-- nav bar -->
+    <nav class="navbar" id="nav-bar">
+
+        <!-- logo section -->
+        <div class="logo" >
+          <img src="Resources/logo-black.png" alt="company logo"/>
+          <img src="Resources/ODA-logo.png" class="white-logo" alt="company logo" />
+         
+          <h4>OD ALTERNATIVES</h4>
+        </div>
+
+        <!-- List of nav bar link -->
+        <ul class="nav-links" id="slidebar">
+
+             <li><a href="#body" class="menu-links">Home</a></li>
+             <li><a href="#services" class="menu-links">Our Experties</a></li>
+             <li><a href="#about" class="menu-links">Our People</a></li>
+             <li><a href="#our-clients" class="menu-links">Our Clients</a></li>
+             <li><a href="#recent-projects" class="menu-links">Recent Projects</a></li>
+             <li><a href="https://odcertification.com/" target="_blank" class="menu-links">OD Certification</a></li>
+             <li><a href="blog.html" class="menu-links">Resources</a></li>
+           </ul>
+
+           <!-- // mobile menu button -->
+           <div class="menu-toggle" id="mobile-menu"></div>
+    </nav>
+
+    <!-- body -->
+     <div class="container" id="container" >
+
+      <!-- 1) top banner -->
+      <div id="banner" data-aos="fade-up">
+
+        <div class="left-text">
+            <p class="first-bold because"> Because </p>
+            <p class="first-bold you"> You </p>
+            <p class="first-bold believe"> Believe <span class="in"> in </span></p>
+            <p class="bold"> <span class="depth"> Depth </span><span class="and"> and </span><span class="impact"> Impact </span></p>
+            <p class="normal"> We have been helping our clients,</p>
+            <p> since 1998, in creating depth and impact in their L&D and OD interventions. </p>
+        </div>
+        <div class="slide-show" id="slide-show"></div>
+      </div>
+
+      
+      <!-- 2) second box -->
+    <div class="second-box" data-aos="fade-up">
+      <p>You are probably exploring how to build the right culture and capabilities that support <span>growth and transformation</span> in your organisation.</p>
+      <p>Then Congratulations! You are at the right place.</p>
+      <p>We have been helping our clients, <span>since 1998</span>, in creating depth and impact in their <span>L&D and OD interventions</span>.</p>
+      <p id="p1">Clients have reached out to us when they wanted to create <span>Vision</span>, <span>Mission</span> and <span>Values</span>, understand the current culture and drive culture change, carry out Leadership Development for high potential employees, design Capability Building Programs for mid and senior employees, coaching for CXOs, Drive growth and transformation by involving and engaging the whole system, execute Women Leadership Programs, and undertake succession planning etc.</p>
+    </div>
+
+
+    <!-- 3) Card Section -->
+      <div class="card-box" data-aos="fade-up">
+        <h1>Our Expertise</h1>
+        <div class="cards">
+
+          <!-- card a -->
+           <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card">
+                <img src="Resources/bird_small.png" alt="icon"/>
+                <p>
+                 WHOLE SYSTEM <br/>TRANSFORMATION
+                </p>
+                </div>
+
+                <div class="flip-card-back">
+                
+                  <p>We support our clients in Creating whole system transformation using behavioral skills and knowledge. These are large scale change initiatives that address  both performance and culture.</p> 
+                 
+                </div>
+
+               </div>
+            </div>
+
+          <!-- card b -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card">
+                <img src="Resources/rabbit_small.png" alt="icon"/>
+                <p>
+                  LEADERSHIP<br/> DEVELOPMENT
+                </p>
+                </div>
+
+                <div class="flip-card-back">   
+                  <p>We also design and deliver learning interventions for the mid and senior level executives.
+
+                    You can download our Leadership Development White paper and Women Leadership study </p> 
+                  
+                </div>
+               </div>
+            </div>
+
+          <!-- card c  -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card">
+                <img src="Resources/owl_small.png" alt="icon"/>
+                <p>
+                  TOP TEAM<br/>DEVELOPMENT
+                </p>
+                </div>
+
+                <div class="flip-card-back">
+                  
+                  <p>We also work with top teams (CEO and his/her team), helping them to be more cohesive, innovative and effective.
+
+                    You can download our whitepaper on Top Team Development </p> 
+                  
+                </div>
+
+               </div>
+            </div>
+
+          <!-- card d -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card">
+                <img src="Resources/frog_small.png" alt="icon"/>
+                <p>
+                  ORGANISATIONAL<br/>
+                  DIAGNOSIS
+                </p>
+                </div>
+
+                <div class="flip-card-back">
+                  
+                  <p>We facilitate offsites and help build more team cohesiveness and collective identity.</p> 
+                 
+                </div>
+
+               </div>
+            </div>
+
+        </div>
+      </div>
+
+
+      <!-- 4) 4 circles -->
+      <div class="fourth" data-aos="fade-up">
+        <div class="circles">
+          <img class="side" src="Resources/left-circle.png"  alt="circles" data-aos="fade-up"/>
+          <img class="center" src="Resources/center-circle.png"  alt="circles" data-aos="fade-up"/>
+          <img class="side" src="Resources/right-circle.png"  alt="circles" data-aos="fade-up"/>
+        </div>
+        
+        <p>Everything we do, we use our unique model</p>
+          <p>Triple Loop Learning, to create <b>Depth & Impact</b></p>
+      </div>
+
+
+
+      
+      
+        <!-- 5) Loop Section -->
+
+        <div class="loop-details fifth" data-aos="fade-up">
+          <div class="first-loop content"  data-aos="fade-up">
+            <h2>Single Loop</h2>
+            <p>Learning new skills and capabilities.</p>
+            <p>Incremental improvement.</p>
+            <p>Doing something better without examining or challenging underlying beliefs and assumptions.</p>
+          </div>
+        
+          <div class="second-loop content" data-aos="fade-up">
+            <h2>Double Loop</h2>
+            <p>Fundamentally reshaping the underlying patterns of our thinking and behavior.</p>
+            <p>As a result we’re capable of doing different things.</p>
+            <p>Going beyond single-loop or incremental learning.</p>
+          </div>
+         
+  
+          <div class="third-loop content" data-aos="fade-up">
+            <h2>Triple Loop</h2>
+            <p>It involves “learning how to learn” by reflecting on how we learn in the first place.</p>
+            <p>This is about learning how our “being” influence our beliefs and thus our actions.</p>
+          </div>
+        </div>
+
+      <!-- 6) Sixth Section  -->
+       <div class="sixth" data-aos="fade-up">
+          <p>When we design Org wide change/transformation Interventions, we address both visible(overt) and Hidden(covert) parts of the Organization Thus creating Depth and Impact in your long-term Interventions​</p>
+          <img src="Resources/CIRCLE 2 change.png" alt="logo" data-aos="fade-up"/>
+      </div> 
+
+
+
+            <!-- 7) SeventhSection -->
+      <div class="seventh about-founder" data-aos="fade-up">
+         <h2>The Founder</h2>
+        
+         <div class="about-box" >
+           <img src="Resources/Santhosh-Babu.jpg" alt="founder" data-aos="fade-up"/>
+           <div class="about" data-aos="fade-up">
+              <p><b>Santosh</b> is passionate about supporting leadership teams in creating new possibilities that add value to all stakeholders. He started ODA in 1998 and has worked with more than 300 clients in the past cross the globe. Santhosh is the author of  India’s first book on coaching  published by Wiley and started the first coach training program in 2006 in India. He is also an awardee of Life Time Achievement Award from Gestalt Institute, USA and selected as a Thinkers 50 in 2014. Santhosh used to write a column in Business Today called “Buddha in the Boardroom".</p>
+              <p>Santhosh coach some of the CEOs and work with several leadership  teams driving transformation, culture change and leadership Development. Before starting ODA, Santhosh worked as a primary school teacher in Bhutan and as an Environmental Education Offer with World Wildlife Fund.</p>
+           </div>
+          </div>
+      </div>
+
+
+
+      
+      <!-- 8) Eigth Section -->
+      <div id="our-clients" data-aos="fade-up">
+        <h2>Trusted by Industry Leaders</h2>
+        <p>Through our seminal body of work over the last two decades, we can understand the distinctiveness of the clients we have supported in terms of their challenges and aspirations and have assisted them in their growth trajectory.</p>
+        
+        <div class="clients-from">
+          <div class="box" id="box1"></div>
+          <div class="box" id="box2"></div>
+          <div class="box" id="box3"></div>
+          <div class="box" id="box4"></div>
+          <div class="box" id="box5"></div>
+          <div class="box" id="box6"></div>
+          <div class="box" id="box7"></div>
+          <div class="box" id="box8"></div>
+          <div class="box" id="box9"></div>
+        </div>
+      </div>
+
+
+      <!-- 9) Section -->
+      <div class="comments" data-aos="fade-up">
+
+        <h2>What Our Clients Say</h2>
+
+        <div class="comment-box" data-aos="fade-up">
+            <span>
+               <img src="Resources/TESTIMONIAL_ANIMESH-KUMAR_edited.jpg" alt="person"/>
+               <p class="name about"><b>ANIMESH KUMAR</b> | Head- HR, Brand Foundation, IDFC Bank</p>
+            </span>
+            <div class=" paragraph">"Effective at helping the business leaders achieve desired outcomes" Successful organizational design and development outcomes require intricate internal navigation and a fine balance of using multiple of approaches ranging from the large scale structured interventions to intense personal conversations. The uniqueness of ODA is that they have managed to achieve this through their engagement with IDFC in last one year! They straddle this full range and that, makes them not only more efficient (one doesn't need to go to multiple organizations) but incredibly more effective at helping the business leaders achieve desired outcomes. I have worked with Santhosh at length and his ability to synthesize the different strands, spot patterns and "suggest, way forward is truly syncretic and often magical!</div>
+        </div>
+
+        <div class="comment-box" data-aos="fade-up">
+          <span>
+             <img src="Resources/TESTIMONIAL_RAJESH-SOOD_edited.jpg" alt="person"/>
+             <p class="name about"><b>RAJESH SUD</b> | Managing Director, Max Life Insurance Co. Ltd, Max Bupa Health Insurance Co. Ltd</p>
+          </span>
+          <div class=" paragraph">"Simplicity of delivery, insightful anecdotes and expertise in human behaviour..." Refreshing Mission Vision and Values for an organization can be a fairly energizing and unifying experience, if handled deftly. This is exactly how it turned out for us when Santhosh Babu facilitated this initiative with our top leadership team. Santhosh has this unique style of connecting with the audience by understanding the organization environment, and key business drivers. His simplicity of delivery, insightful anecdotes and expertise in human behaviour make him a good choice to facilitate large scale critical people intervention. He has demonstrated this skill several times. Besides helping Max Life team refresh its Vision Mission Values, he has also effectively facilitated multiple Max Group level Leadership meets. Santhosh has been a great partner and we wish him and OD Alternatives all the best!</div>
+        </div>
+
+        <div class="comment-box" data-aos="fade-up">
+          <span>
+             <img src="Resources/Testimonial ramesh dahiya_edited.jpg" alt="person"/>
+             <p class="name about"><b>RAMESH K DAHIYA</b> | Executive Director (Corporate Centre), Axis Bank Ltd.</p>
+          </span>
+          <div class=" paragraph" >ODA understand complex organizational contexts I have worked with ODA in multiple occasions in the last five years. Facilitating our strategy meet, help our teams manage change, support our leaders through change and building team effectiveness are some of the areas we worked with ODA team. What strikes me is their ability to understand complex organisational contexts along with individual contexts of leaders and design interventions that are innovative, impactful and transformational. There is a personal touch, customized approach and conceptual rigor in what ever they do. Driving change and Transformational leadership is something in the core DNA of ODA.</div>
+        </div>
+      </div>
+
+        <!-- 10) Section -->
+        <div id="recent-projects">
+          <div class="video-container" data-aos="fade-up">
+            <video id="myVideo" class="video" width="600" controls>
+                <source src="Resources/santhosh_babu_oda.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        </div>
+  
+  
+
+      <!-- 11) Section -->
+      <div class="second-last">
+        <h2>Let us be a part of your success story...</h2>
+        <h4>JOIN THE TRANSFORMATION DISCUSSION</h4>
+        <button type="button" class="image-button">
+          
+          Get OD Publication
+          <img src="Resources/fish.png" alt="Button Image" class="button-image"/>
+      </button>
+      </div>
+     
+
+      <!-- 12) Section -->
+      <!-- Footer -->
+      <footer data-aos="fade-up">
+
+             <div class="first">
+
+               <div class="logo-box">
+
+                 <div class="logo">
+                   <img src="Resources/ODA-logo.png" alt="company logo"/>
+                   <h3>OD ALTERNATIVES</h3>
+                 </div>
+            
+                 <div class="social-icon">
+                   <a href="https://www.linkedin.com/company/wix-com/"><i class="fa-brands fa-linkedin-in" "></i></a>
+                   <a href="https://www.youtube.com/user/Wix"><i class="fa-brands fa-youtube"></i></a>
+                 </div>
+               </div>
+
+               <div class="content-box">
+                 <div class="contact">
+                   <h3>Contact</h3>
+                   <p>OD Alternative Consultancy Pvt Ltd A-6/280 B  DDA Flats Paschim Puri New Delhi 110018</p>
+                 </div>
+    
+                 <div class="more">
+                   <h3>More</h3>
+                     <p>Sales: info@mysite.com</p>
+                     <p>Customer Care: info@mysite.com</p>
+                 </div>
+    
+                 <div class="follow">
+                   <h3>Follow</h3>
+                   <p>Sign up to get the latest news on our product.</p>
+                   <input type="text" placeholder="Email"/>
+                   <button type="button">Subscribe</button>
+                 </div>
+               </div>
+  
+          
+             </div>
+        
+             <hr/>
+             <div class="second">
+               <a href="terms_and_condition.html">Terms & Conditions</a>
+               <a href="privacy_policy.html">Privacy Policy</a>
+             </div>
+           </footer> 
+
+      </div>
+
+
+      
+    
+      <!-- for the animation -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init({duration: 900});</script>
+
+       <script src="script.js"></script>
+</body>
+</html>
