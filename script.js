@@ -173,3 +173,47 @@ document.addEventListener('DOMContentLoaded', () => {
  assignUniqueRandomImages();
  setTimeout(updateRandomBox, 100);
 
+
+// 9) comment
+// script.js
+const scrollContainer = document.getElementById('scrollContainer');
+const popup = document.getElementById('popup');
+const popupContent = document.getElementById('popupContent');
+const closePopup = document.getElementById('closePopup');
+
+// Scroll buttons functionality
+document.getElementById('scrollLeft').addEventListener('click', function() {
+  scrollContainer.scrollBy({
+    left: -200, // Adjust this value to change the scroll amount
+    behavior: 'smooth'
+  });
+});
+
+document.getElementById('scrollRight').addEventListener('click', function() {
+  scrollContainer.scrollBy({
+    left: 200, // Adjust this value to change the scroll amount
+    behavior: 'smooth'
+  });
+});
+
+// Item click functionality
+const items = document.querySelectorAll('.item');
+items.forEach(item => {
+  item.addEventListener('click', function() {
+    // Reset background color for all items
+    items.forEach(i => i.classList.remove('active'));
+
+    // Set the clicked item as active
+    item.classList.add('active');
+
+    // Display popup with clicked item content
+    popupContent.innerHTML = `<div>${item.innerHTML}</div>`;
+    popup.style.display = 'flex';
+  });
+});
+
+// Close button functionality
+closePopup.addEventListener('click', function() {
+  popup.style.display = 'none';
+  items.forEach(item => item.classList.remove('active')); // Reset active state
+});
