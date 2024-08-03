@@ -137,43 +137,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // our clients are//////////////////////////////////
- // script.js
- const imageCount = 20;
- const boxes = document.querySelectorAll('.box');
- const imagePaths = Array.from({ length: imageCount }, (_, i) => `Wallpaper/${i + 1}.jfif`);
+const imageCount = 30;
+const boxes = document.querySelectorAll('.box');
+const imagePaths = Array.from({ length: imageCount }, (_, i) => `Wallpaper/${i + 1}.jfif`);
 
- function getRandomInt(max) {
-   return Math.floor(Math.random() * max);
- }
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
- function assignUniqueRandomImages() {
-   const usedIndexes = new Set();
-   boxes.forEach(box => {
-     let randomIndex;
-     do {
-       randomIndex = getRandomInt(imageCount);
-     } while (usedIndexes.has(randomIndex));
-     usedIndexes.add(randomIndex);
-     box.style.backgroundImage = `url('${imagePaths[randomIndex]}')`;
-   });
- }
+function assignUniqueRandomImages() {
+    const usedIndexes = new Set();
+    boxes.forEach(box => {
+        let randomIndex;
+        do {
+            randomIndex = getRandomInt(imageCount);
+        } while (usedIndexes.has(randomIndex));
+        usedIndexes.add(randomIndex);
+        box.style.backgroundImage = `url('${imagePaths[randomIndex]}')`;
+    });
+}
 
- function updateRandomBox() {
-   const randomBoxIndex = getRandomInt(boxes.length);
-   const currentImages = Array.from(boxes).map(box => box.style.backgroundImage);
-   let randomImageIndex;
-   do {
-     randomImageIndex = getRandomInt(imageCount);
-   } while (currentImages.includes(`url("${imagePaths[randomImageIndex]}")`));
-   
-   boxes[randomBoxIndex].style.backgroundImage = `url('${imagePaths[randomImageIndex]}')`;
-   setTimeout(updateRandomBox, getRandomInt(300) + 200);
- }
+function updateRandomBox() {
+    const randomBoxIndex = getRandomInt(boxes.length);
+    const currentImages = Array.from(boxes).map(box => box.style.backgroundImage);
+    let randomImageIndex;
+    do {
+        randomImageIndex = getRandomInt(imageCount);
+    } while (currentImages.includes(`url("${imagePaths[randomImageIndex]}")`));
+    
+    boxes[randomBoxIndex].style.backgroundImage = `url('${imagePaths[randomImageIndex]}')`;
+    setTimeout(updateRandomBox, getRandomInt(300) + 200);
+}
 
- assignUniqueRandomImages();
- setTimeout(updateRandomBox, 100);
+assignUniqueRandomImages();
+setTimeout(updateRandomBox, 100);
 
 
+
+
+
+ 
 // 9) comment
 // script.js
 const scrollContainer = document.getElementById('scrollContainer');
@@ -217,3 +220,59 @@ closePopup.addEventListener('click', function() {
   popup.style.display = 'none';
   items.forEach(item => item.classList.remove('active')); // Reset active state
 });
+
+
+
+
+
+
+// slide show
+
+let slideIndex = 1;
+let slideInterval;
+
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+function startSlideshow() {
+  slideInterval = setInterval(function() {
+    plusSlides(1);
+  }, 2000); // Change slide every 2 seconds
+}
+
+function pauseSlideshow() {
+  clearInterval(slideInterval);
+}
+
+function resumeSlideshow() {
+  startSlideshow();
+}
+
+startSlideshow();
+
+
+
+
