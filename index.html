@@ -26,7 +26,7 @@
           <img src="Resources/logo-black.png" alt="company logo"/>
           <img src="Resources/ODA-logo.png" class="white-logo" alt="company logo" />
          
-          <h4>OD ALTERNATIVES</h4>
+          <p class="od-alternatives">OD ALTERNATIVES</p>
         </div>
 
         <!-- List of nav bar link -->
@@ -59,26 +59,61 @@
             <p class="bold"> <span class="depth"> Depth </span><span class="and"> and </span><span class="impact"> Impact </span></p>
             <p class="normal"> We have been helping our clients, since 1998, in creating depth and impact in their L&D and OD interventions. </p>
         </div>
-        <div class="slide-show" id="slide-show"></div>
+        <!-- <div class="slide-show" id="slide-show"></div> -->
+
+        
+<div class="slide-show">
+  <div class="slideshow-container" onmouseover="pauseSlideshow()" onmouseout="resumeSlideshow()">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Resources/poster-1.jpeg" />
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Resources/poster-2.jpg" />
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Resources/poster-3.png" />
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </div>
+</div>
+
+     
       </div>
 
-   
-      <div class="custom-shape-divider-top-1722496690">
+      <div class="custom-shape-divider-top-1722594066">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
-    </div>
+  </div>
+      
 
       
       <!-- 2) second box -->
     <div class="second-box" data-aos="fade-up">
+        <ul>
+          <li class="child-1"> <img src="Resources/plant.png" alt="icon"/> <p>You are probably exploring how to build the right culture and capabilities that support <b>growth and transformation</b> in your organisation.</p></li>
+          <li class="child-2"> <img src="Resources/plant.png" alt="icon"/> <p>Then Congratulations! You are at the right place.</p></li>
+          <li class="child-3"> <img src="Resources/plant.png" alt="icon"/> <p>We have been helping our clients, <b>since 1998</b>, in creating depth and impact in their <b>L&D and OD interventions</b>.</p></li>
+        </ul>
         <div>
-          <p>You are probably exploring how to build the right culture and capabilities that support <span>growth and transformation</span> in your organisation.</p>
-          <p>Then Congratulations! You are at the right place.</p>
-          <p>We have been helping our clients, <span>since 1998</span>, in creating depth and impact in their <span>L&D and OD interventions</span>.</p>
-        </div>
-        <div>
-          <p id="p1">Clients have reached out to us when they wanted to create <span>Vision</span>, <span>Mission</span> and <span>Values</span>, understand the current culture and drive culture change, carry out Leadership Development for high potential employees, design Capability Building Programs for mid and senior employees, coaching for CXOs, Drive growth and transformation by involving and engaging the whole system, execute Women Leadership Programs, and undertake succession planning etc.</p>
+          <p id="p1">Clients have reached out to us when they wanted to create <b>Vision</b>, <b>Mission</b> and <b>Values</b>, understand the current culture and drive culture change, carry out Leadership Development for high potential employees, design Capability Building Programs for mid and senior employees, coaching for CXOs, Drive growth and transformation by involving and engaging the whole system, execute Women Leadership Programs, and undertake succession planning etc.</p>
         </div>
 
     </div>
@@ -86,7 +121,10 @@
 
     <!-- 3) Card Section -->
       <div class="card-box" data-aos="fade-up">
-        <h1>Our Expertise</h1>
+        <div class="heading-box">
+          <img src="Resources/medal-.png" alt="logo"/>
+          <h1>Our Expertise</h1>
+        </div>
         <div class="cards">
 
           <!-- card a -->
@@ -180,8 +218,8 @@
           <img class="side" src="Resources/right-circle.png"  alt="circles" data-aos="fade-up"/>
         </div>
         
-        <p>Everything we do, we use our unique model</p>
-          <p>Triple Loop Learning, to create <b>Depth & Impact</b></p>
+          <p>Everything we do, we use our unique model</p>
+          <p>Triple Loop Learning, to create Depth & Impact</p>
       </div>
 
 
@@ -191,31 +229,56 @@
         <!-- 5) Loop Section -->
 
         <div class="loop-details fifth" data-aos="fade-up">
-          <div class="first-loop content"  data-aos="fade-up">
-            <h2>Single Loop</h2>
-            <p>Learning new skills and capabilities.</p>
-            <p>Incremental improvement.</p>
-            <p>Doing something better without examining or challenging underlying beliefs and assumptions.</p>
-          </div>
-        
-          <div class="second-loop content" data-aos="fade-up">
-            <h2>Double Loop</h2>
-            <p>Fundamentally reshaping the underlying patterns of our thinking and behavior.</p>
-            <p>As a result we’re capable of doing different things.</p>
-            <p>Going beyond single-loop or incremental learning.</p>
-          </div>
-         
-  
-          <div class="third-loop content" data-aos="fade-up">
-            <h2>Triple Loop</h2>
-            <p>It involves “learning how to learn” by reflecting on how we learn in the first place.</p>
-            <p>This is about learning how our “being” influence our beliefs and thus our actions.</p>
+
+          <img src="Resources/face change1.png" alt="face"/>
+
+          <div class="loop-box">
+
+            <div class="loop"  data-aos="fade-up">
+              <div class="loop-heading">
+                <img src="Resources/check.png" alt="icon"/> 
+                <h1>Single Loop</h1>
+              </div>
+              <ul>
+                <li><p>Learning new skills and capabilities.</p></li>
+                <li><p>Incremental improvement.</p></li>
+                <li><p>Doing something better without examining or challenging underlying beliefs and assumptions.</p></li>
+              </ul>
+              
+            </div>
+
+            <div class="loop"  data-aos="fade-up">
+              <div class="loop-heading">
+                <img src="Resources/check.png" alt="icon"/> 
+                <h1>Double Loop</h1>
+              </div>
+              <ul>
+                <li><p>Fundamentally reshaping the underlying patterns of our thinking and behavior.</p></li>
+                <li><p>As a result we’re capable of doing different things.</p></li>
+                <li><p>Going beyond single-loop or incremental learning.</p></li>
+              </ul>
+              
+            </div>
+
+            <div class="loop"  data-aos="fade-up">
+              <div class="loop-heading">
+                <img src="Resources/check.png" alt="icon"/> 
+                <h1>Triple Loop</h1>
+              </div>
+              <ul>
+                <li><p>It involves “learning how to learn” by reflecting on how we learn in the first place.</p></li>
+                <li><p>This is about learning how our “being” influence our beliefs and thus our actions.</p></li>       
+              </ul>      
+            </div>
           </div>
         </div>
 
       <!-- 6) Sixth Section  -->
        <div class="sixth" data-aos="fade-up">
-          <p>When we design Org wide change/transformation Interventions, we address both visible(overt) and Hidden(covert) parts of the Organization Thus creating Depth and Impact in your long-term Interventions​</p>
+        <img  class="arrow" src="Resources/curved-arrow-with-broken-line.png" alt="arrow"/>
+            <p>When we design Org wide change/transformation Interventions, we address both visible(overt) and Hidden(covert) parts of the Organization Thus creating Depth and Impact in your long-term Interventions​</p>
+           
+          
           <img src="Resources/CIRCLE 2 change.png" alt="logo" data-aos="fade-up"/>
       </div> 
 
@@ -223,12 +286,16 @@
 
             <!-- 7) SeventhSection -->
       <div class="seventh about-founder" data-aos="fade-up">
-         <h2>The Founder</h2>
+        <div class="heading-box">
+          <img src="Resources/manager.png" alt="logo"/>
+          <h1>The Founder</h1>
+        </div>
+         
         
          <div class="about-box" >
            <img src="Resources/Santhosh-Babu.jpg" alt="founder" data-aos="fade-up"/>
            <div class="about" data-aos="fade-up">
-              <p><b>Santosh</b> is passionate about supporting leadership teams in creating new possibilities that add value to all stakeholders. He started ODA in 1998 and has worked with more than 300 clients in the past cross the globe. Santhosh is the author of  India’s first book on coaching  published by Wiley and started the first coach training program in 2006 in India. He is also an awardee of Life Time Achievement Award from Gestalt Institute, USA and selected as a Thinkers 50 in 2014. Santhosh used to write a column in Business Today called “Buddha in the Boardroom".</p>
+              <p>Santosh is passionate about supporting leadership teams in creating new possibilities that add value to all stakeholders. He started ODA in 1998 and has worked with more than 300 clients in the past cross the globe. Santhosh is the author of  India’s first book on coaching  published by Wiley and started the first coach training program in 2006 in India. He is also an awardee of Life Time Achievement Award from Gestalt Institute, USA and selected as a Thinkers 50 in 2014. Santhosh used to write a column in Business Today called “Buddha in the Boardroom".</p>
               <p>Santhosh coach some of the CEOs and work with several leadership  teams driving transformation, culture change and leadership Development. Before starting ODA, Santhosh worked as a primary school teacher in Bhutan and as an Environmental Education Offer with World Wildlife Fund.</p>
            </div>
           </div>
@@ -239,34 +306,51 @@
       
       <!-- 8) Eigth Section -->
       <div id="our-clients" data-aos="fade-up">
-        <h2>Trusted by Industry Leaders</h2>
+        <div class="heading-box">
+          <img src="Resources/trust.png" alt="logo"/>
+          <h1>Trusted by Industry Leaders</h1>
+        </div>
+        
         <p>Through our seminal body of work over the last two decades, we can understand the distinctiveness of the clients we have supported in terms of their challenges and aspirations and have assisted them in their growth trajectory.</p>
         
         <div class="clients-from">
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="box" id="box3"></div>
-          <div class="box" id="box4"></div>
-          <div class="box" id="box5"></div>
-          <div class="box" id="box6"></div>
-          <div class="box" id="box7"></div>
-          <div class="box" id="box8"></div>
-          <div class="box" id="box9"></div>
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+            <div class="box" id="box10"></div>
+            <div class="box" id="box11"></div>
+            <div class="box" id="box12"></div>
+            <div class="box" id="box13"></div>
+            <div class="box" id="box14"></div>
+            <div class="box" id="box15"></div>
+            <div class="box" id="box16"></div>
         </div>
-      </div>
-
+    </div>
 
       <!-- 9) Section -->
       <div class="comments" data-aos="fade-up">
+        <div class="heading-box">
+          <img src="Resources/chat.png" alt="logo"/>
+          <h1>What Our Clients Say</h1>
+        </div>
 
-        <h2>What Our Clients Say</h2>
+       
+        
 
         <div class="scroll-container-wrapper">
-          <button class="scroll-btn left" id="scrollLeft">◀</button>
+          <button class="scroll-btn left" id="scrollLeft">
+            <img class="arrow" src="Resources/left-arrow.png" alt="left arrow"/>
+          </button>
           <div class="scroll-container" id="scrollContainer">
 
             <div class="item">
-              <div class="message-box"><p class="message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+              <div class="message-box"><p class="message ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
               <div class="aboutPerson">
                 <img src="Resources/TESTIMONIAL_ANIMESH-KUMAR_edited.jpg" alt="commentPerson"/>
                 <div >
@@ -307,7 +391,9 @@
               </div>
             </div>
           </div>
-          <button class="scroll-btn right" id="scrollRight">▶</button>
+          <button class="scroll-btn right" id="scrollRight">
+            <img class="arrow" src="Resources/chevron.png" alt="left arrow"/>
+          </button>
          </div>
          
  <!-- Popup structure -->
@@ -335,10 +421,11 @@
 
       <!-- 11) Section -->
       <div class="second-last">
-        <h2>Let us be a part of your success story...</h2>
-        <h4>JOIN THE TRANSFORMATION DISCUSSION</h4>
+
+        <h1 >Let us be a part of your success story...</h1>
+        <h1 >JOIN THE TRANSFORMATION DISCUSSION</h1>
+
         <button type="button" class="image-button">
-          
           Get OD Publication
           <img src="Resources/fish.png" alt="Button Image" class="button-image"/>
       </button>
