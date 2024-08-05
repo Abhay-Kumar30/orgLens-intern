@@ -137,9 +137,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // our clients are//////////////////////////////////
-const imageCount = 30;
+const imageCount = 49;
 const boxes = document.querySelectorAll('.box');
-const imagePaths = Array.from({ length: imageCount }, (_, i) => `Wallpaper/${i + 1}.jfif`);
+const imagePaths = Array.from({ length: imageCount }, (_, i) => `Wallpaper/${i + 1}.jpg`);
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
