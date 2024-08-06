@@ -263,7 +263,7 @@ body {position:relative;
  #our-clients p{margin:20px 0;width:80%;color:rgb(57, 57, 57);font-size:1.1rem;line-height:40px;}
 
  .clients-from {display: grid;grid-template-columns: repeat(4, 1fr);grid-gap: 100px;padding: 20px;max-width: 90%;margin: auto;}
- .clients-from .box {width: 100%;padding-bottom: 100%;position: relative;background-size:contain;background-position: center;background-repeat:no-repeat;}
+ .clients-from .box {width: 100%;padding-bottom: 100%;position: relative;background-size:contain;background-position: center;background-repeat:no-repeat;transition:0.3s;}
  .clients-from .box img {position: absolute;top: 0;left: 0;width: 100%;height: 100%;object-fit: cover;}
 
  @media (max-width:380px){
