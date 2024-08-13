@@ -195,8 +195,10 @@ body {position:relative;
 
 /* 5) Loop Section */
 .loop-details{padding:30px 60px;width:100%;color:rgb(0, 0, 0);display:grid;grid-template-columns:1.5fr 2fr;;gap:30px;}
-.loop-details .loop-box{display:flex;flex-direction:column;gap:4px;}
-.loop-details img{width:100%;align-self:center ;}
+.loop-details .loop-box{display:flex;flex-direction:column;gap:4px;position:relative;}
+.loop-details img{width:100%;z-index:2;align-self:center;}
+.loop-details .loop-box:after{content:""; position:absolute;width:60px;height:60px;border-radius:50%;border:1.7px dotted rgb(229, 229, 229);;left:-150px;top:80px;}
+.loop-details .loop-box:before{content:""; position:absolute;width:40px;height:40px;border-radius:50%;border:1.7px dotted rgb(236, 236, 236);;left:-80px;top:30px;}
 
 .loop-details h1{color:rgb(57, 57, 57);;font-size:1.4rem;}
 .loop-details .loop{border-radius:4px;padding:10px 40px;background:rgba(249, 249, 249, 0.799);color:rgb(27, 27, 27);}
