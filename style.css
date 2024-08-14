@@ -264,7 +264,7 @@ body {position:relative;
  #our-clients .heading-box{display:flex;gap:4px;align-items:center;}
 #our-clients .heading-box img{width:40px;height:40px;}
  #our-clients h1{font-weight:bold;font-size:1.7rem;color:rgb(57, 57, 57);;}
- #our-clients p{margin:20px 0;width:80%;color:rgb(57, 57, 57);font-size:1.1rem;line-height:40px;}
+ #our-clients p{margin:20px 0;width:100%;color:rgb(57, 57, 57);font-size:1.1rem;line-height:40px;}
 
  .clients-from {display: grid;grid-template-columns: repeat(4, 1fr);grid-gap: 100px;padding: 20px;max-width: 90%;margin: auto;}
  .clients-from .box {transform:.7s; transition-behavior: smooth;width: 100%;padding-bottom: 100%;position: relative;background-size:contain;background-position: center;background-repeat:no-repeat;}
