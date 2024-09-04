@@ -3,509 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>OrgLens</title>
 
-    <!-- //for animation -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- For fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-
-    <!-- font robot -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- bootstrap icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-   
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
 </head>
-<body id="body">
+<body>
+    <div class="container">
 
-    
-  <!-- nav bar -->
-    <nav class="navbar" id="nav-bar">
+        <!-- nav bar -->
+        <div class="navContainer">
+            <img src="Resources/logo-black.png" alt="company's logo"/>
+            <ul class="navLinksBox">
+                 <li><a href=""> HOME             </a> </li>
+                 <li><a href=""> PROJECTS         </a> </li>
+                 <li><a href=""> EVENTS           </a> </li>
 
-        <!-- logo section -->
-        <div class="logo" >
-          <img src="Resources/logo-black.png" alt="company logo"/>
-          <img src="Resources/ODA-logo.png" class="white-logo" alt="company logo" />
-         
-          <!-- <p class="od-alternatives">OD ALTERNATIVES</p> -->
-        </div>
-
-        <!-- List of nav bar link -->
-        <ul class="nav-links" id="slidebar">
-
-             <li><a href="#body" class="menu-links">Home</a></li>
-             <li><a href="#services" class="menu-links">Our Experties</a></li>
-             <li><a href="#about" class="menu-links">Our People</a></li>
-             <li><a href="#our-clients" class="menu-links">Our Clients</a></li>
-             <li><a href="#recent-projects" class="menu-links">Recent Projects</a></li>
-             <li><a href="https://odcertification.com/" target="_blank" class="menu-links">OD Certification</a></li>
-             <li><a href="blog.html" class="menu-links">Resources</a></li>
-           </ul>
-
-           <!-- // mobile menu button -->
-           <div class="menu-toggle" id="mobile-menu"></div>
-    </nav>
-
-    <!-- body -->
-     <div class="container" id="container" >
-
-      <!-- 1) top banner -->
-      <div id="banner"  data-aos="fade-up" >
-      
-
-        
-        <div class="bannerText">
-            <p class="mainHeading"> Because you believe in Depth and <span>Impact</span></p>
-            <p class="normal"> We have been helping our clients, since 1998, in creating depth and impact in their L&D and OD interventions. </p>
-        
-          </div>
-        <!-- <div class="slide-show" id="slide-show"></div> -->
-         <div class="bannerArrow">
-          <i class="bi bi-arrow-down"></i>
-          
-         </div>
-
-        
-<div class="slide-show">
-  <div class="slideshow-container" onmouseover="pauseSlideshow()" onmouseout="resumeSlideshow()">
-
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="Resources/poster-1.jpeg" />
-      <!-- <div class="text">Caption Text</div> -->
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="Resources/poster-2.jpg" />
-      <!-- <div class="text">Caption Two</div> -->
-    </div>
-    
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="Resources/poster-3.png" />
-      <!-- <div class="text">Caption Three</div> -->
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    
-    <div class="dots" style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
-    </div>
-</div>
-
-  
-  <!-- <i class="bi bi-arrow-bar-down bannerBottomArrow"></i>
- -->
-
-     
-      </div>
-
-      <!-- <div class="custom-shape-divider-top-1722594066">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-  </div>
-       -->
-
-      
-      <!-- 2) second box -->
-    <div class="second-box" data-aos="fade-up">
-        <div class="ul">
-          <div class="li child-1"> <img src="Resources/shapes/s1.png" class="imga" alt="icon"/> <p class="paraa">You are probably exploring how to build the right culture and capabilities that support <b>growth and transformation</b> in your organisation.</p></div>
-          <div class="li child-2"> <img src="Resources/shapes/s2.png" class="imgb" alt="icon"/> <p class="parab">Then <b>Congratulations!</b> You are at the right place.</p></div>
-          <div class="li child-3"> <img src="Resources/shapes/s3.png" class="imgc" alt="icon"/> <p class="parac">We have been helping our clients, since 1998, in creating depth and impact in their L&D and OD interventions.</p></div>
-          <div class="li child-4"> <img src="Resources/shapes/s4.png" class="imgd" alt="icon"/></div>
-        </div>
-        <div class="p1">
-          <p id="p1">Clients have reached out to us when they wanted to create <b>Vision</b>, <b>Mission</b> and <b>Values</b>, understand the current culture and drive culture change, carry out Leadership Development for high potential employees, design Capability Building Programs for mid and senior employees, coaching for CXOs, Drive growth and transformation by involving and engaging the whole system, execute Women Leadership Programs, and undertake succession planning etc.</p>
-        </div>
-
-    </div>
-
-
-    <!-- 3) Card Section -->
-      <div class="expertiesCardBox" data-aos="fade-up">
-        <div class="headingBox">
-          <h1>OUR EXPERTISE</h1>
-          <hr/>
-        </div>
-        <div class="expertiesCards">
-<hr class="verticalLine"/>
-         <div class="expertiesBox expertiesLeft">
-          <img src="Resources/e1.png" alt="e1"/>
-          <p>WHOLESYSTEM <span>TRANSFORMATION</span></p>
-         </div>
-
-         <div class="expertiesBox expertiesRight">
-          <img src="Resources/e2.png" alt="e1"/>
-          <p>LEADERSHIP <span>DEVELOPMENT</span></p>
-         </div>
-
-         <div class="expertiesBox expertiesLeft">
-          <img src="Resources/e3.png" alt="e1"/>
-          <p>ORGANISATIONAL <span>DIAGNOSIS</span></p>
-         </div>
-
-         <div class="expertiesBox expertiesRight">
-          <img src="Resources/e4.png" alt="e1"/>
-          <p>TOP TEAM <span>DEVELOPMENT</span></p>
-         </div>
+                 <li><a href=""> CLIENTS          </a> </li>
+                 <li><a href=""> OD CERTIFICATION </a> </li>
+                 <li><a href=""> ABOUT US         </a> </li>
+               
+            </ul>
 
         </div>
-      </div>
 
-
-      <!-- 4) 4 circles -->
-      <div class="fourth" data-aos="fade-up">
-        <div class="circles">
-          <!-- <img class="side" src="Resources/left-circle.png"  alt="circles" data-aos="fade-up"/> -->
-          <img class="center" src="Resources/FINAL CIRCLE (1).png"  alt="circles" data-aos="fade-up"/>
-          <!-- <img class="side" src="Resources/right-circle.png"  alt="circles" data-aos="fade-up"/> -->
-        </div>
-        
-          <p class="circlespA">Everything we do, we use our unique model</p>
-          <p class="circlespB">Triple Loop Learning, to create Depth & Impact</p>
-      </div>
-
-
-
-      
-      
-        <!-- 5) Loop Section -->
-
-        <div class="loop-details fifth" data-aos="fade-up">
-
-         
-
-          <div class="loop-box">
-
-            <div class="loop"  data-aos="fade-up">
-              <div class="loop-heading">
-                <img src="Resources/check.png" alt="icon"/> 
-                <h1>Single Loop</h1>
-              </div>
-              <ul>
-                <li><p>Learning new skills and capabilities.</p></li>
-                <li><p>Incremental improvement.</p></li>
-                <li><p>Doing something better without examining or challenging underlying beliefs and assumptions.</p></li>
-              </ul>
-              
+        <!-- banner -->
+         <div class="bannerContainer">
+            <div class="bannerContentBox">
+                <h1>
+                    <span>Increasing Alignment</span> in teams and<br><span>building capabilities</span> among middle and senior leaders<br><span>since 1998</span></h1>
+                <p>We are experts in helping leadership teams to have more alignment
+                    on their purpose, strategy and culture and so that they show up as a
+                    cohesive identity to the rest of the organisation.
+                    We also have deep expertise in designing and delivering highly
+                    impactful leadership development and succession planning
+                    interventions</p>
+                <button>Our Unique Triple Loop Methodology</button>
             </div>
+            <img src="Resources/d1.png" alt=""/>
+         </div>
 
-            <div class="loop"  data-aos="fade-up">
-              <div class="loop-heading">
-                <img src="Resources/check.png" alt="icon"/> 
-                <h1>Double Loop</h1>
-              </div>
-              <ul>
-                <li><p>Fundamentally reshaping the underlying patterns of our thinking and behavior.</p></li>
-                <li><p>As a result we’re capable of doing different things.</p></li>
-                <li><p>Going beyond single-loop or incremental learning.</p></li>
-              </ul>
-              
-            </div>
+         <!-- Our Expertise -->
+          <div class="expertiesContainer">
+            <h1>Our Expertise</h1>
+            <div class="expertiesCardBox">
+                <div class="expertiesCard">
+                    <img src="Resources/p1.png" alt="icon"/>
+                    <div class="cardContent">
+                        <p>Leadership Development</p>
+                        <button>Learn More...</button>
+                    </div>
+                </div>
+                <div class="expertiesCard centerCard">
+                    <img src="Resources/p2.png" alt="icon"/>
+                    <div class="cardContent">
+                    <p>Team Development</p>
+                    <button>Learn More and Download</button>
+                    </div>
+                </div>
+                <div class="expertiesCard">
+                    <img src="Resources/p3.png" alt="icon"/>
+                    <div class="cardContent">
+                    <p>Capability Building</p>
+                    <button>Learn More...</button>
+                    </div>
+                </div>
+                <div class="expertiesCard">
+                    <img src="Resources/p4.png" alt="icon"/>
+                    <div class="cardContent">
+                    <p>Capability Building</p>
+                    <button>Learn More...</button>
+                    </div>
+                </div>
+                <div class="expertiesCard centerCard">
+                    <img src="Resources/p5.png" alt="icon"/>
+                    <div class="cardContent">
+                    <p>Vision, Mission and Values</p>
+                    <button>Learn More...</button>
+                    </div>
+                </div>
+                <div class="expertiesCard">
+                    <img src="Resources/p6.png" alt="icon"/>
+                    <div class="cardContent">
+                    <p>One on One Coaching for CXOs</p>
+                    <button>Learn More...</button>
+                    </div>
+                </div>
 
-            <div class="loop"  data-aos="fade-up">
-              <div class="loop-heading">
-                <img src="Resources/check.png" alt="icon"/> 
-                <h1>Triple Loop</h1>
-              </div>
-              <ul>
-                <li><p>It involves “learning how to learn” by reflecting on how we learn in the first place.</p></li>
-                <li><p>This is about learning how our “being” influence our beliefs and thus our actions.</p></li>       
-              </ul>      
             </div>
           </div>
-          <img src="Resources/face change1 (1).png" alt="face"/>
-        </div>
 
-      <!-- 6) Sixth Section  -->
-       <div class="sixth" data-aos="fade-up">
-        <!-- <img  class="arrow" src="Resources/curved-arrow-with-broken-line.png" alt="arrow"/> -->
-            <p>When we design Org wide change/transformation Interventions, we address both visible(overt) and Hidden(covert) parts of the Organization Thus creating Depth and Impact in your long-term Interventions​</p>
-           
-          
-          <img src="Resources/CIRCLE 2 change (1).png" alt="logo" data-aos="fade-up"/>
-      </div> 
-
-
-
-            <!-- 7) SeventhSection -->
-      <div class="seventh about-founder" data-aos="fade-up">
-        <div class="heading-box">
-          <!-- <img src="Resources/manager.png" alt="logo"/> -->
-          <h1>THE <span>FOUNDER</span></h1>
-          <hr/>
-        </div>
-         
-        
-         <div class="about-box" >
-           <div class="nameBox">
-            <img src="Resources/Santhosh-Babu.jpg" alt="founder" data-aos="fade-up"/>
-            <span>Santhosh Babu</span>
-           </div>
-           <div class="about" data-aos="fade-up">
-              <p>Santhosh is passionate about supporting leadership teams in creating new possibilities that add value to all stakeholders. He started ODA in 1998 and has worked with more than 300 clients in the past cross the globe. Santhosh is the author of  India’s first book on coaching  published by Wiley and started the first coach training program in 2006 in India. He is also an awardee of Life Time Achievement Award from Gestalt Institute, USA and selected as a Thinkers 50 in 2014. Santhosh used to write a column in Business Today called “Buddha in the Boardroom".</p>
-              <p>Santhosh coach some of the CEOs and work with several leadership  teams driving transformation, culture change and leadership Development. Before starting ODA, Santhosh worked as a primary school teacher in Bhutan and as an Environmental Education Offer with World Wildlife Fund.</p>
-           </div>
-          </div>
-      </div>
-
-
-
-      
-      <!-- 8) Eigth Section -->
-      <div id="our-clients" data-aos="fade-up">
-
-        <div class="heading-box">
-          <!-- <img src="Resources/trust.png" alt="logo"/> -->
-          <h1>TRUSTED BY <br> INDUSTRY <span>LEADERS</span></h1>
-          <p>Through our seminal body of work over the last two decades, we can understand the distinctiveness of the clients we have supported in terms of their challenges and aspirations and have assisted them in their growth trajectory.</p>
+          <!-- 4th section -->
+           <div class="fourthSection">
+            <p class="firstLine">Everything we do we use our unique model<br> <span>"Triple Loop Learning"</span> to create <span>"Depth & Impact"</span></p>
+           <img src="Resources/p7.png" alt=""/>
+           <p class="secondLine">We not only focus on the doing side of Leadership but also on the thinking and being part.</p>
+           <p class="thirdLine">Who we are <b>“being”</b> influences the goals we set and the results we get.</p>
         </div>
            
-        <div class="clients-from">
-            <div class="box" id="box1"></div>
-            <div class="box" id="box2"></div>
-            <div class="box" id="box3"></div>
-            <div class="box" id="box4"></div>
-            <div class="box" id="box5"></div>
-            <div class="box" id="box6"></div>
-            <div class="box" id="box7"></div>
-            <div class="box" id="box8"></div>
-            <div class="box" id="box9"></div>
-            <div class="box" id="box10"></div>
-            <div class="box" id="box11"></div>
-            <div class="box" id="box12"></div>
-            <div class="box" id="box13"></div>
-            <div class="box" id="box14"></div>
-            <div class="box" id="box15"></div>
-            <div class="box" id="box16"></div>
-        </div>
-        <button>Complete Client List</button>
-
     </div>
 
-      <!-- 9) Section -->
-      <div class="comments" data-aos="fade-up">
-        <div class="heading-box">
-          <!-- <img src="Resources/chat.png" alt="logo"/> -->
-          <h1>WHAT OUR CLIENTS SAY</h1>
-          <p>Let's Connect</p>
-        </div>
 
-       
-        
-
-        <div class="scroll-container-wrapper">
-          <button class="scroll-btn left" id="scrollLeft">
-            <i class="bi bi-arrow-left-circle"></i>
-          </button>
-          <div class="scroll-container" id="scrollContainer">
-
-            <div class="item">
-
-              <div class="aboutPerson">
-                <img src="Resources/c1.png" alt="commentPerson"/>
-                <div >
-                  <p class="name">AMAN KUMAR</p>
-                  <p class="description">Doctor AIIMS</p>
-                </div>
-              </div>
-
-              <div class="message-box">
-                <p class="message ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-              </div>
-              <div class="buttonBox">
-                <button>Read more..</button>
-                <hr/>
-              </div>
-            </div>
-
-            <div class="item">
-
-              <div class="aboutPerson">
-                <img src="Resources/c1.png" alt="commentPerson"/>
-                <div >
-                  <p class="name">AMAN KUMAR</p>
-                  <p class="description">Doctor AIIMS</p>
-                </div>
-              </div>
-
-              <div class="message-box">
-                <p class="message ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-              </div>
-              <div class="buttonBox">
-                <button>Read more..</button>
-                <hr/>
-              </div>
-            </div>
-
-            <div class="item">
-
-              <div class="aboutPerson">
-                <img src="Resources/c1.png" alt="commentPerson"/>
-                <div >
-                  <p class="name">AMAN KUMAR</p>
-                  <p class="description">Doctor AIIMS</p>
-                </div>
-              </div>
-
-              <div class="message-box">
-                <p class="message ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-              </div>
-              <div class="buttonBox">
-                <button>Read more..</button>
-                <hr/>
-              </div>
-            </div>
-
-            <div class="item">
-
-              <div class="aboutPerson">
-                <img src="Resources/c1.png" alt="commentPerson"/>
-                <div >
-                  <p class="name">AMAN KUMAR</p>
-                  <p class="description">Doctor AIIMS</p>
-                </div>
-              </div>
-
-              <div class="message-box">
-                <p class="message ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-              </div>
-              <div class="buttonBox">
-                <button>Read more..</button>
-                <hr/>
-              </div>
-            </div>
-
-            <div class="item">
-
-              <div class="aboutPerson">
-                <img src="Resources/c1.png" alt="commentPerson"/>
-                <div >
-                  <p class="name">AMAN KUMAR</p>
-                  <p class="description">Doctor AIIMS</p>
-                </div>
-              </div>
-
-              <div class="message-box">
-                <p class="message ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-              </div>
-              <div class="buttonBox">
-                <button>Read more..</button>
-                <hr/>
-              </div>
-            </div>
-
-           
-          </div>
-          <button class="scroll-btn right" id="scrollRight">
-            <i class="bi bi-arrow-right-circle"></i>
-          </button>
-         </div>
-         
- <!-- Popup structure -->
- <div class="popup" id="popup">
-  <div class="popup-content" id="popupContent"></div>
-  <button class="close-btn" id="closePopup">✖</button>
-</div>
-
-
-        </div>
-
-       
-
-        <!-- 10) Section -->
-        <div id="recent-projects">
-
-           <div class="video-container" data-aos="fade-up">
-             <video id="myVideo" class="video" width="600" controls> <source src="Resources/santhosh_babu_oda.mp4" type="video/mp4"> Your browser does not support the video tag. </video>
-           </div>
-        <p>Let us be a part of your success story...</p>
-        <p>Join the transformation discussion</p>
-        <button type="button" class="image-button">Get OD Publication</button>
-        
-        </div>
-  
-
-      <!-- 12) Section -->
-      <!-- Footer -->
-      
-      <footer data-aos="fade-up">
-
-             <div class="first">
-
-               <div class="logo-box">
-
-                 <div class="logo">
-                   <img src="Resources/ODA-logo.png" alt="company logo"/>
-                   <h3>OD ALTERNATIVES</h3>
-                 </div>
-            
-                 <div class="social-icon">
-                   <a href="https://www.linkedin.com/company/wix-com/"><i class="fa-brands fa-linkedin-in" "></i></a>
-                   <a href="https://www.youtube.com/user/Wix"><i class="fa-brands fa-youtube"></i></a>
-                 </div>
-               </div>
-
-               <div class="content-box">
-                 <div class="contact">
-                   <h3>CONTACT</h3>
-                   <p>OD Alternative Consultancy Pvt Ltd A-6/280 B  DDA Flats Paschim Puri New Delhi 110018</p>
-                 </div>
     
-                 <div class="more">
-                   <h3>MORE</h3>
-                     <p>Sales: info@mysite.com</p>
-                     <p>Customer Care: info@mysite.com</p>
-                 </div>
-    
-                 <div class="follow">
-                   <h3>FOLLOW</h3>
-                   <p>Sign up to get the latest news on our product.</p>
-                   <input type="text" placeholder="Email"/>
-                   <button type="button">Subscribe</button>
-                 </div>
-               </div>
-  
-          
-             </div>
-        
-             <hr/>
-             <div class="second">
-               <a href="terms_and_condition.html">Terms & Conditions</a>
-               <a href="privacy_policy.html">Privacy Policy</a>
-             </div>
-           </footer> 
-           
-
-      </div>
-
-
-      
-    
-      <!-- for the animation -->
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>AOS.init({duration: 900});</script>
-
-       <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-<!-- Website for svg -->
-<!-- https://www.shapedivider.app/ -->
-
-
-
-
