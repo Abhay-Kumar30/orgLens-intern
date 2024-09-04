@@ -156,7 +156,7 @@ border: 2px solid rgba(51, 51, 51, 1);
 
 
                 /* sixth section */
-                .sixthSection{display:flex;align-items:center;padding:120px 72px;}
+                .sixthSection{display:flex;align-items:center;padding:120px 72px;position:relative;}
                 .sixthSection img{width: 540px;position:absolute;right:0;
                     max-height: 382px;
                    
