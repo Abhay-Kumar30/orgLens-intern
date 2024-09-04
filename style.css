@@ -91,7 +91,7 @@ height: 40px;margin:0 auto;
 border-radius: 4px;display:flex;justify-content: center;align-items: center;
 border: 2px solid rgba(51, 51, 51, 1);
             }
-    .container .expertiesContainer .expertiesCardBox .centerCard{border-left:0.3px solid black;border-right:1px solid black;}
+    .container .expertiesContainer .expertiesCardBox .centerCard{border-left:0.3px solid rgb(139, 139, 139);border-right:1px solid rgb(139, 139, 139);}
 
 /* 
     fourth section */
@@ -125,3 +125,52 @@ border: 2px solid rgba(51, 51, 51, 1);
                         line-height: 32.81px;
                      
                         }
+
+/* Tripple loop sections */
+    .tripleLoopSection{padding:0 72px;}
+    .tripleLoopSection h1{font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 60px;
+        text-align: center;
+        }
+        .tripleLoopSection .container{display:flex;gap:70px;margin-top:68px;}
+        .tripleLoopSection .container img{width: 466px;
+            max-height: 470px;
+           
+            }
+            .tripleLoopSection .container .rightBox{display:flex;flex-direction:column;gap:90px;}
+            .tripleLoopSection .container .rightBox .loopDetails{display: grid;grid-template-columns:1fr 4fr;gap:30px;border-left:0.3px solid rgb(139, 139, 139);}
+            .tripleLoopSection .container .rightBox .loopDetails h1{color:#343434;font-family: 'Montserrat', sans-serif;margin-left:30px;align-self:center;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;}
+                .tripleLoopSection .container .rightBox .loopDetails h1 span{color:#343434;font-family: 'Montserrat', sans-serif;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 28px;}
+            .tripleLoopSection .container .rightBox .loopDetails ul li p{font-family: 'Work Sans', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;}
+
+
+                /* sixth section */
+                .sixthSection{display:flex;align-items:center;padding:120px 72px;}
+                .sixthSection img{width: 540px;position:absolute;right:0;
+                    max-height: 382px;
+                   
+                    
+                    }
+                    .sixthSection h2{font-family: 'Montserrat', sans-serif;
+                        font-size: 32px;width:710px;
+                        font-weight: 500;
+                        line-height: 60px;margin-bottom:20px;
+                        
+                        }
+                        .sixthSection p{font-family: 'Work Sans', sans-serif;
+                            font-size: 20px;width:745px;
+                            font-weight: 400;
+                            line-height: 27.34px;
+                            
+                            }
