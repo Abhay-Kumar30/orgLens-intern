@@ -11,7 +11,7 @@ h4{}
 h5{}
 h6{}
 
-.container{max-width:1440px;margin:0 auto;min-height:100vh;;}
+.container{max-width:1440px;margin:0 auto;min-height:100vh;overflow:hidden;;}
 
 /* nav bar */
 .container .navContainer{display:flex;justify-content: space-between;align-items:center;padding:0 72px;;}
@@ -25,9 +25,9 @@ h6{}
     }
 
 /* banner */
-.container .bannerContainer{display:flex;justify-content:space-between;gap:10px;background: rgba(249, 249, 249, 0.5);padding:32px 72px;}
+.container .bannerContainer{display:flex;justify-content:space-between;gap:20px;background: rgba(249, 249, 249, 0.75);padding:30px 72px 60px 72px;}
 .container .bannerContainer .bannerContentBox{}
-.container .bannerContainer .bannerContentBox h1{color:#343434;font-family: 'Montserrat', sans-serif;
+.container .bannerContainer .bannerContentBox h1{color:rgb(52,52,52,1);font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 60px;
@@ -64,38 +64,56 @@ h6{}
 
 
 /* Our Experties */
-.container .expertiesContainer{padding:0px 72px;}
-.container .expertiesContainer h1{font-family: 'Montserrat', sans-serif;color:rgba(0, 0, 0, 1);margin:20px 0 30px 0;
+.container .expertiesContainer{padding:0px 72px;margin-top:40px;}
+.container .expertiesContainer h1{font-family: 'Montserrat', sans-serif;color:rgb(23, 23, 23);
     font-size: 32px;
-    font-weight: 500;
-    line-height: 60px;text-align: center;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: center;
  
     }
 
-    .container .expertiesContainer .expertiesCardBox{display:grid;grid-template-columns: 1fr 1fr 1fr;row-gap: 70px;;}
-    .container .expertiesContainer .expertiesCardBox .expertiesCard{text-align:center;display: flex;flex-direction:column;align-items:center;justify-content:space-between;;gap:10px;}
-    .container .expertiesContainer .expertiesCardBox .expertiesCard img{max-width:50%;}
+    .container .expertiesContainer .expertiesCardBox{display:grid;grid-template-columns: 1fr 1fr 1fr;row-gap: 60px;margin-top:10px;;}
+  
+    .container .expertiesContainer .expertiesCardBox .centerCard{position:relative;}
+    .container .expertiesContainer .expertiesCardBox .expertiesCard{text-align:center;display: flex;flex-direction:column;align-items:center;justify-content:space-between;;gap:10px;padding:0 40px;}
+    .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox{object-fit: contain;max-height:200px;}
+    .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox img{object-fit: contain;}
+    .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox{width:100%;height:auto;}
+    .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox img{max-width:100%;max-height:100%;}
     .container .expertiesContainer .expertiesCardBox .expertiesCard .cardContent p{font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 60px;
-       
+font-size: 20px;
+font-weight: 500;
+line-height: 60px;margin-top:-20px;
         }
+
         .container .expertiesContainer .expertiesCardBox .expertiesCard .cardContent button{font-family: 'Poppins', sans-serif;background:white;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 68px;
-           padding:0 20px;
-height: 40px;margin:0 auto;
+             font-size: 14px;
+             font-weight: 500;
+             line-height: 68px;
+             padding:0 20px;
+height: 40px;margin:30px auto;color: rgba(89, 88, 101, 1);
+
 
 border-radius: 4px;display:flex;justify-content: center;align-items: center;
-border: 2px solid rgba(51, 51, 51, 1);
+border: 2px solid rgba(155, 147, 147, 1);
             }
-    .container .expertiesContainer .expertiesCardBox .centerCard{border-left:0.3px solid rgb(139, 139, 139);border-right:1px solid rgb(139, 139, 139);}
+
+            .container .expertiesContainer .expertiesCardBox .expertiesCard .cardContent button:hover{cursor:pointer;border: 2px solid #EAEEF1;color: rgb(35, 35, 35);}
+    .container .expertiesContainer .expertiesCardBox .centerCard::after{content:"";
+    position:absolute;
+    width:1px;height:40%;;background:rgba(102, 102, 102, 1);
+    left:0;top:30%;
+}
+.container .expertiesContainer .expertiesCardBox .centerCard::before{content:"";
+    position:absolute;
+    width:1px;height:40%;;background:rgba(102, 102, 102, 1);
+    right:0;top:30%;
+}
 
 /* 
     fourth section */
-    .fourthSection{display:flex;justify-content: center;flex-direction: column;align-items: center;gap:20px;padding:140px 72px;;text-align:center;}
+    .fourthSection{display:flex;justify-content: center;flex-direction: column;align-items: center;gap:20px;padding:50px 72px 70px;margin:50px 0 50px;;text-align:center;background:rgba(249, 249, 249, 0.75);    }
     .fourthSection .firstLine{font-family: 'Montserrat', sans-serif;
         font-size: 28px;
         font-weight: 400;
@@ -108,7 +126,7 @@ border: 2px solid rgba(51, 51, 51, 1);
             line-height: 60px;
       
             }
-            .fourthSection img{max-width: 711px;margin:4px 0;
+            .fourthSection img{max-width: 711px;margin:7px 0;
                 height: 186px;
                 
                 }
@@ -130,17 +148,17 @@ border: 2px solid rgba(51, 51, 51, 1);
     .tripleLoopSection{padding:0 72px;}
     .tripleLoopSection h1{font-family: 'Montserrat', sans-serif;
         font-size: 32px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 60px;
         text-align: center;
         }
-        .tripleLoopSection .container{display:flex;gap:70px;margin-top:68px;}
-        .tripleLoopSection .container img{width: 466px;
+        .tripleLoopSection .container{display:flex;gap:70px;margin-top:50px;justify-content:center;}
+        .tripleLoopSection .container img{max-width: 466px;
             max-height: 470px;
            
             }
-            .tripleLoopSection .container .rightBox{display:flex;flex-direction:column;gap:90px;}
-            .tripleLoopSection .container .rightBox .loopDetails{display: grid;grid-template-columns:1fr 4fr;gap:30px;border-left:0.3px solid rgb(139, 139, 139);}
+            .tripleLoopSection .container .rightBox{display:flex;flex-direction:column;gap:70px;}
+            .tripleLoopSection .container .rightBox .loopDetails{display: grid;grid-template-columns:1fr 4fr;gap:36px;border-left:0.3px solid #9da0a1;}
             .tripleLoopSection .container .rightBox .loopDetails h1{color:#343434;font-family: 'Montserrat', sans-serif;margin-left:30px;align-self:center;
                 font-size: 18px;
                 font-weight: 400;
@@ -149,52 +167,60 @@ border: 2px solid rgba(51, 51, 51, 1);
                     font-size: 40px;
                     font-weight: 700;
                     line-height: 28px;}
-            .tripleLoopSection .container .rightBox .loopDetails ul li p{font-family: 'Work Sans', sans-serif;
+                    .tripleLoopSection .container .rightBox .loopDetails ul{width:380px;display:flex;flex-direction:column;gap:4px;}
+            .tripleLoopSection .container .rightBox .loopDetails ul li p{font-family: 'Work Sans', sans-serif;text-align:justify;
                 font-size: 16px;
                 font-weight: 400;
-                line-height: 24px;}
+                line-height: 26px;}
 
 
                 /* sixth section */
-                .sixthSection{display:flex;align-items:center;padding:120px 72px;position:relative;}
+                .sixthSection{display:grid;grid-template-columns:2fr 1fr;align-items:center;padding:50px 72px 50px;margin-top:-30px;background:rgba(249, 249, 249, 0.75);}
            
-                .sixthSection img{width: 540px;position:absolute;right:0;
-                    max-height: 382px;
+                .sixthSection img{width:80%;
+                    
                    
                     
                     }
                     .sixthSection h2{font-family: 'Montserrat', sans-serif;color:rgba(0, 0, 0, 1);
-                        font-size: 32px;width:710px;
+                        font-size: 32px;
                         font-weight: 500;
-                        line-height: 60px;margin-bottom:20px;
+                        line-height: 60px;margin-bottom:2px;
                         
                         }
                         .sixthSection p{font-family: 'Work Sans', sans-serif;
-                            font-size: 20px;width:735px;
+                            font-size: 16px;max-width:90%;
                             font-weight: 400;
                             line-height: 27.34px;
+                      
+                            
+                      
+                            
                             
                             }
 
       /* About founder Section */
-    .founderSection{padding:40px 72px;}
+    .founderSection{padding:0 72px;margin:28px 0;}
     .founderSection h1{font-family: 'Montserrat', sans-serif;color:rgba(0, 0, 0, 1);
-        font-size: 32px;
-        font-weight: 500;
+        font-size: 32px;margin-bottom:16px;
+        font-weight: 600;
         line-height: 60px;
         
         }
-    .founderSection .contentBox{display:flex;;gap:70px;justify-content:space-between;;width:100%;}
-    .founderSection .contentBox .about{max-width:745px;display:flex;flex-direction:column;}
-    .founderSection .contentBox .about p{font-family: 'Work Sans', sans-serif;color:rgb(18, 18, 18);margin-top:20px;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 27.34px;
-     
+    .founderSection .contentBox{display:flex;;gap:40px;align-items:start;justify-content:space-between;}
+    .founderSection .contentBox .about{display:flex;flex-direction:column;gap:10px;}
+    .founderSection .contentBox .about p{color:rgb(18, 18, 18);
+        font-family: 'Work Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27.34px;text-align:justify;
+          
+          
+            
 
 
         }
-    .founderSection .contentBox img{max-width: 414px;border-radius:4px;
+    .founderSection .contentBox img{max-width: 700px;border-radius:4px;border:none;
        
         
         }
