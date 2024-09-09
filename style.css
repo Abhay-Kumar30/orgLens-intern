@@ -64,7 +64,7 @@ h6{}
 
 
 /* Our Experties */
-.container .expertiesContainer{padding:0px 72px;margin-top:40px;}
+.container .expertiesContainer{padding:0px 72px;}
 .container .expertiesContainer h1{font-family: 'Montserrat', sans-serif;color:rgb(23, 23, 23);
     font-size: 32px;
     font-weight: 600;
@@ -73,74 +73,83 @@ h6{}
  
     }
 
-    .container .expertiesContainer .expertiesCardBox{display:grid;grid-template-columns: 1fr 1fr 1fr;row-gap: 60px;margin-top:10px;;}
+    .container .expertiesContainer .expertiesCardBox{display:grid;grid-template-columns: 1fr 1fr 1fr;row-gap: 40px;margin-top:30px;;}
   
     .container .expertiesContainer .expertiesCardBox .centerCard{position:relative;}
-    .container .expertiesContainer .expertiesCardBox .expertiesCard{text-align:center;display: flex;flex-direction:column;align-items:center;justify-content:space-between;;gap:10px;padding:0 40px;}
-    .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox{object-fit: contain;max-height:200px;}
+    .container .expertiesContainer .expertiesCardBox .expertiesCard{text-align:center;display: flex;flex-direction:column;align-items:center;justify-content:space-between;;gap:2px;padding:0 40px;}
+    .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox{object-fit: contain;max-height:170px;}
     .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox img{object-fit: contain;}
     .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox{width:100%;height:auto;}
     .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox img{max-width:100%;max-height:100%;}
     .container .expertiesContainer .expertiesCardBox .expertiesCard .cardContent p{font-family: 'Montserrat', sans-serif;
-font-size: 20px;
-font-weight: 500;
-line-height: 60px;margin-top:-20px;
+font-size: 16px;
+font-weight: 560;
+line-height: 60px;margin-top:-20px;color:#202124;
         }
 
         .container .expertiesContainer .expertiesCardBox .expertiesCard .cardContent button{font-family: 'Poppins', sans-serif;background:white;
-             font-size: 14px;
-             font-weight: 500;
+             font-size: 16px;
+             
              line-height: 68px;
              padding:0 20px;
-height: 40px;margin:30px auto;color: rgba(89, 88, 101, 1);
+height: 40px;margin:12px auto 0;color:#202124;
 
 
 border-radius: 4px;display:flex;justify-content: center;align-items: center;
-border: 2px solid rgba(155, 147, 147, 1);
+border: 1.2px solid #bdbfc6;
             }
 
-            .container .expertiesContainer .expertiesCardBox .expertiesCard .cardContent button:hover{cursor:pointer;border: 2px solid #EAEEF1;color: rgb(35, 35, 35);}
+            .container .expertiesContainer .expertiesCardBox .expertiesCard .cardContent button:hover{cursor:pointer;border: 2px solid #1A73E8;color: rgb(35, 35, 35);}
     .container .expertiesContainer .expertiesCardBox .centerCard::after{content:"";
     position:absolute;
-    width:1px;height:40%;;background:rgba(102, 102, 102, 1);
+    width:1px;height:40%;;background:#DADCE0;
     left:0;top:30%;
 }
 .container .expertiesContainer .expertiesCardBox .centerCard::before{content:"";
     position:absolute;
-    width:1px;height:40%;;background:rgba(102, 102, 102, 1);
+    width:1px;height:40%;;background:#DADCE0;
     right:0;top:30%;
 }
 
 /* 
     fourth section */
-    .fourthSection{display:flex;justify-content: center;flex-direction: column;align-items: center;gap:20px;padding:50px 72px 70px;margin:50px 0 50px;;text-align:center;background:rgba(249, 249, 249, 0.75);    }
-    .fourthSection .firstLine{font-family: 'Montserrat', sans-serif;
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 60px;
+    .fourthSection{display:flex;justify-content: center;flex-direction: column;align-items: center;gap:5px;padding:50px 72px 70px;margin:50px 0 20px;;text-align:center;background:rgba(249, 249, 249, 0.75);    }
+    .fourthSection .firstLine{
+        /* font-family: 'Montserrat', sans-serif;
+        font-size: 36px;color:#202124;
+        
+        line-height: 60px; */
+        font-family: 'Work Sans', sans-serif;
+                        font-size: 28px;
+                        font-weight: 400;
+                        line-height: 46px;color:#202124;
        
         }
-        .fourthSection .firstLine span{font-family: 'Montserrat', sans-serif;
-            font-size: 36px;
+        .fourthSection .firstLine span{font-family: 'Work Sans', sans-serif;
+            font-size: 28px;
             font-weight: 700;
-            line-height: 60px;
+            line-height: 32.81px;color:#202124;
       
             }
-            .fourthSection img{max-width: 711px;margin:7px 0;
-                height: 186px;
+            .fourthSection img{max-width: 670px;margin:14px 0;
+                max-height: 186px;
                 
                 }
 
-                .fourthSection .secondLine{font-family: 'Work Sans', sans-serif;
-                    font-size: 16px;
+                .fourthSection .secondLine{
+                    font-family: 'Work Sans', sans-serif;
+                    font-size: 20px;
                     font-weight: 400;
-                    line-height: 21.87px;
+                    line-height: 32.81px;color:#5F6368;
+                    /* font-size: 16px;
+                    font-weight: 400;
+                    line-height: 21.87px; */
                     
                     }
                     .fourthSection .thirdLine{font-family: 'Work Sans', sans-serif;
-                        font-size: 24px;
+                        font-size: 20px;
                         font-weight: 400;
-                        line-height: 32.81px;
+                        line-height: 32.81px;color:#202124;
                      
                         }
 
@@ -152,18 +161,18 @@ border: 2px solid rgba(155, 147, 147, 1);
         line-height: 60px;
         text-align: center;
         }
-        .tripleLoopSection .container{display:flex;gap:70px;margin-top:50px;justify-content:center;}
+        .tripleLoopSection .container{display:flex;gap:70px;margin-top:60px;justify-content:center;}
         .tripleLoopSection .container img{max-width: 466px;
             max-height: 470px;
            
             }
             .tripleLoopSection .container .rightBox{display:flex;flex-direction:column;gap:70px;}
-            .tripleLoopSection .container .rightBox .loopDetails{display: grid;grid-template-columns:1fr 4fr;gap:36px;border-left:0.3px solid #9da0a1;}
-            .tripleLoopSection .container .rightBox .loopDetails h1{color:#343434;font-family: 'Montserrat', sans-serif;margin-left:30px;align-self:center;
-                font-size: 18px;
+            .tripleLoopSection .container .rightBox .loopDetails{display: grid;grid-template-columns:1fr 4fr;gap:36px;border-left:0.3px solid #DADCE0;}
+            .tripleLoopSection .container .rightBox .loopDetails h1{color:#202124;font-family: 'Montserrat', sans-serif;margin-left:30px;align-self:center;
+                font-size: 16px;
                 font-weight: 400;
                 line-height: 28px;}
-                .tripleLoopSection .container .rightBox .loopDetails h1 span{color:#343434;font-family: 'Montserrat', sans-serif;
+                .tripleLoopSection .container .rightBox .loopDetails h1 span{color:#202124;font-family: 'Montserrat', sans-serif;
                     font-size: 40px;
                     font-weight: 700;
                     line-height: 28px;}
@@ -175,23 +184,23 @@ border: 2px solid rgba(155, 147, 147, 1);
 
 
                 /* sixth section */
-                .sixthSection{display:grid;grid-template-columns:2fr 1fr;align-items:center;padding:50px 72px 50px;margin-top:-30px;background:rgba(249, 249, 249, 0.75);}
-           
-                .sixthSection img{width:80%;
+                .sixthSection{display:grid;grid-template-columns:2fr 1fr;align-items:space-evenly;;padding:50px 72px 50px;margin-top:-30px;background:rgba(249, 249, 249, 0.75);}
+                .sixthSection .contentBox{display:flex;justify-content:center;flex-direction:column;align-items:center;}
+                .sixthSection img{width:80%;margin-left:auto;
                     
                    
                     
                     }
-                    .sixthSection h2{font-family: 'Montserrat', sans-serif;color:rgba(0, 0, 0, 1);
+                    .sixthSection h2{font-family: 'Montserrat', sans-serif;color:#202124;;
                         font-size: 32px;
                         font-weight: 500;
-                        line-height: 60px;margin-bottom:2px;
+                        line-height: 60px;margin-bottom:2px;text-align:center;
                         
                         }
                         .sixthSection p{font-family: 'Work Sans', sans-serif;
-                            font-size: 16px;max-width:90%;
-                            font-weight: 400;
-                            line-height: 27.34px;
+                            font-size: 16px;max-width:94%;
+                            font-weight: 400;color:#202124;
+                            line-height: 27.34px;text-align:center;
                       
                             
                       
@@ -201,15 +210,15 @@ border: 2px solid rgba(155, 147, 147, 1);
 
       /* About founder Section */
     .founderSection{padding:0 72px;margin:28px 0;}
-    .founderSection h1{font-family: 'Montserrat', sans-serif;color:rgba(0, 0, 0, 1);
-        font-size: 32px;margin-bottom:16px;
+    .founderSection h1{font-family: 'Montserrat', sans-serif;color:#202124;;
+        font-size: 32px;margin-bottom:14px;
         font-weight: 600;
         line-height: 60px;
         
         }
     .founderSection .contentBox{display:flex;;gap:40px;align-items:start;justify-content:space-between;}
     .founderSection .contentBox .about{display:flex;flex-direction:column;gap:10px;}
-    .founderSection .contentBox .about p{color:rgb(18, 18, 18);
+    .founderSection .contentBox .about p{color:#202124;
         font-family: 'Work Sans', sans-serif;
             font-size: 16px;
             font-weight: 400;
@@ -220,7 +229,7 @@ border: 2px solid rgba(155, 147, 147, 1);
 
 
         }
-    .founderSection .contentBox img{max-width: 700px;border-radius:4px;border:none;
+    .founderSection .contentBox img{max-width: 700px;border-radius:4px;border:none;margin-top:-50px;
        
         
         }
