@@ -1,747 +1,409 @@
-*{
-padding:0;
-margin:0;
-box-sizing: border-box;
-}
-html{scroll-behavior:smooth;;;}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrgLens</title>
 
-@font-face {
-    font-family: 'Fustat';
-    src: url('fonts/fustat.woff2') format('woff2'),
-         url('fonts/fustat.woff') format('woff'),
-         url('fonts/fustat.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  /* body{background:green;} */
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-h1{}
-h2{}
-h3{}
-h4{}
-h5{}
-h6{}
+    <!-- Google Font: Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-.container{max-width:1440px;margin:0 auto;min-height:100vh;overflow:hidden;;}
+  <!-- Google Font: Work Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-/* nav bar */
-
-.container .navContainer{
-    
-    max-width:1440px;
-    background:white;
-    position:fixed;top:0;
-    width:100%;;
-    display:flex;justify-content: space-between !important;align-items:center;
-    padding:0 62px;
-    transition: transform 0.6s ease, opacity 0.6s ease;transform-origin: top; /* Pivot point for the flip */
-    z-index: 999;text-align:center;}
-
-.container .navContainer img{width:90px;padding:22px 0;}
-.container .navLinksBox{list-style-type:none;display: flex;gap:30px;}
-
-.container .navLinksBox a{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 21px;
-    color:rgba(80, 80, 80, 1);text-decoration: none;
-    }
-    
-.container .navLinksBox a:hover{color:#080808;}
+  <!-- font inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 
 
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body id="body">
+    <div class="container">
 
-/* .navContainer {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: white;
-    
-} */
-
-.hide-nav {
-    transform: rotateX(90deg); /* Flip upwards */
-    opacity: 0;
-}
-
-.show-nav {
-    transform: rotateX(0deg); /* Return to normal */
-    opacity: 1;
-}
-
-
-
-/* banner */
-.container .bannerContainer{display:flex;;justify-content:space-evenly;gap:40px;padding:68px 62px;margin:70px 0 0px;
-    background-image:url('Resources/backgroundTexture.png');
-    background-size:cover;
-    background-repeat:no-repeat;
-
-    ;;}
-
-.container .bannerContainer .bannerContentBox h1{
-    color:rgba(52, 52, 52, 1);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 50px;
-
-    }
-    .container .bannerContainer .bannerContentBox h1 span{
-        font-size: 32px;
-        font-weight: 700;
+        <!-- nav bar -->
+        <div class="navContainer" id="navBar">
+            <img src="Resources/logo-black.png" data-aos="flip-up" alt="company's logo"/>
+            <ul class="navLinksBox">
        
-        }
-        .container .bannerContainer .bannerContentBox .bannerDescription{margin-top:22px;padding-left:2px; ;max-width:844px;}
-        .container .bannerContainer .bannerContentBox .bannerDescription p{
-           font-family: 'Inter', sans-serif;;text-align:left;
-font-size: 14px;
-font-weight: 400;
-line-height: 22px;
-letter-spacing: 0.02em;
-            
-            }
-            .container .bannerContainer .bannerContentBox .bannerDescription p span{
-                font-family: 'Inter', sans-serif;;
-font-size: 14px;
-font-weight: 600;
-line-height: 22px;
-letter-spacing: 0.02em;
-text-align: left;color:rgba(42, 42, 42, 1);
+                 <li><a href="#body">                        HOME             </a> </li>
+                 <li><a href="#projects">                    PROJECTS         </a> </li>
+                 <li><a href="#events">                      EVENTS           </a> </li>
+                 <li><a href="#clients">                     CLIENTS          </a> </li>
+                 <li><a href="https://odcertification.com/"> OD CERTIFICATION </a> </li>
+                 <li><a href="">                             ABOUT US         </a> </li>
 
-            }
-            .container .bannerContainer .bannerContentBox button{font-family: 'Poppins', sans-serif;background:white;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 68px;
-               
-                height: 36px;
-               
-                border-radius: 4px;display:flex;align-items:center;justify-content:center;
-                border: 2px solid rgba(107, 101, 101, 1);
-                color:rgba(0, 0, 0, 1);margin-top:45px;padding:0px 50px;
-               
-                
-                }
-.container .bannerContainer img{max-height:326px;margin-top:-10px;;}
+            </ul>
 
-/* additional section */
-.additionalSection{display:grid;grid-template-columns:1fr 1fr;;gap:65px;padding:30px 146px;background:rgba(249, 249, 249, 1);}
-.additionalSection p{font-family: 'Work Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 19.14px;
-    text-align: justify;color:#000000;
-    }
-    .additionalSection p span{font-family: 'Work Sans', sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 19.14px;
-        text-align: justify;
-        }
+        </div>
 
-/* Our Experties */
-.container .expertiesContainer{padding:48px 72px 58px ;;}
-.container .expertiesContainer h1{
-    font-family: 'Montserrat', sans-serif;color:rgba(43, 43, 43, 1);
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 60px;
-   
+        <!-- banner -->
+         <div class="bannerContainer">
+            <div class="bannerContentBox">
+                <h1>
+                    <span>Increasing Alignment</span> in teams and<br><span>building capabilities</span> among middle and senior leaders<br><span>since 1998</span>
+                </h1>
+<div class="bannerDescription">
 
-
- 
-    }
-   
-    .container .expertiesContainer .expertiesCardBox{display:grid;grid-template-columns: 1fr 1fr 1fr;row-gap: 60px;margin-top:20px;;}
-  
-    .container .expertiesContainer .expertiesCardBox .centerCard{position:relative;}
-    .container .expertiesContainer .expertiesCardBox .expertiesCard{text-align:center;display: flex;flex-direction:column;align-items:center;justify-content:space-between;;gap:2px;padding:0 50px;}
-    .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox{object-fit: contain;max-width:159px;max-height:138px;}
-    .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox img{object-fit: contain;}
-    .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox{width:100%;height:auto;}
-    .container .expertiesContainer .expertiesCardBox .expertiesCard .imageBox img{max-width:100%;max-height:100%;}
-    .container .expertiesContainer .expertiesCardBox .expertiesCard .cardContent p{
-        font-family: 'Montserrat', sans-serif;
-font-size: 16px;
-font-weight: 600;
-line-height: 60px;margin-top:-20px;color:rgba(0, 0, 0, 1);
-        }
-
-        .container .expertiesContainer .expertiesCardBox .expertiesCard .cardContent button{
-            font-family: 'Inter', sans-serif;background:white;
-             font-size: 14px;
-             font-weight: 500;
-             line-height: 68px;
-
-             padding:0 30px;height: 35px;margin:6px auto 0;color:#000000;max-width:196px;
-             border-radius: 4px;border: 2px solid rgba(171, 182, 190, 1);
-             display:flex;justify-content: center;align-items: center;
-             
-            }
-
-            .container .expertiesContainer .expertiesCardBox .expertiesCard .cardContent button:hover{cursor:pointer;border: 2px solid #1A73E8;color: rgb(35, 35, 35);}
-    .container .expertiesContainer .expertiesCardBox .centerCard::after{content:"";
-    position:absolute;
-    width:1px;height:124px;;;background:rgba(156, 156, 156, 1);;opacity:60%;
-    left:0;top:10%;
-}
-.container .expertiesContainer .expertiesCardBox .centerCard::before{content:"";
-    position:absolute;
-    width:1px;height:124px;;;background:rgba(156, 156, 156, 1);;opacity:60%;
-    right:0;top:10%;
-}
-  
-/* 
-    fourth section */
-    .fourthSection{display:flex;flex-direction: column;align-items: center;padding:52px 74px 75px;margin:0px 0 0px;;text-align:center !important;
-        background-image:url('Resources/backgroundTexture.png');
-        background-size:cover;
-        background-repeat:no-repeat;
-        ;;;;   }
-    .fourthSection .firstLine{
-        font-family: 'Montserrat', sans-serif;
-
-                        font-size: 21px;
-                        font-weight: 400;
-                        line-height: 46px;color:rgba(52, 52, 52, 1);
-       
-        }
-        .fourthSection .secondLine{ font-family: 'Montserrat', sans-serif;margin-top:-15px;
-
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 60px;color:#343434;
-}
-        .fourthSection .secondLine span{font-family: 'Montserrat', sans-serif;
-
-            font-size: 25px;
-            font-weight: 600;
-            line-height: 46px;color:#343434;
-      
-            }
-            .fourthSection img{max-width: 619px;max-height:207;margin:44px auto 2;text-align:center;;
-
-
-               
-                
-                }
-
-                .fourthSection .thirdLine{margin-top:20px;
-                    font-family: 'Inter', sans-serif;
-font-size: 19px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0.02em;
-text-align: center;color:rgba(43, 43, 43, 1);;
-
-                    }
-                    .fourthSection .thirdLine span{
-                        font-family: 'Inter', sans-serif;
-font-size: 19px;
-font-weight: 600;
-line-height: 34px;
-letter-spacing: 0.02em;
-text-align: center;color:rgba(43, 43, 43, 1);
-
-                    }
-                    .fourthSection .fourthLine{font-family: 'Work Sans', sans-serif;
-                        font-size: 22px;margin-top:5px;margin-left:auto;margin-right:auto;
-                        font-weight: 300;
-                        line-height: 32.81px;color:#000000;;
-                     
-                        }
-
-/* Tripple loop sections */
-    .tripleLoopSection{padding:40px 62px 24px;}
-    .tripleLoopSection h1{
-        font-family: 'Montserrat', sans-serif;color:rgba(43, 43, 43, 1);
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 60px;
-
-        }
-        .tripleLoopSection .container{display:flex;gap:80px;margin-top:48px;justify-content:center;}
-        .tripleLoopSection .container img{max-width: 466px;
-            max-height: 470px;
-           
-            }
-            .tripleLoopSection .container .rightBox{display:flex;flex-direction:column;gap:70px;}
-            .tripleLoopSection .container .rightBox .loopDetails{display: grid;grid-template-columns:1fr 4fr;position:relative;gap:36px;border-left:0.3px solid #DADCE0;}
-            
-            .tripleLoopSection .container .rightBox .loopDetails h1{
-                color:#72757f;font-family: 'Montserrat', sans-serif;margin-left:30px;align-self:center;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 28px;}
-                .tripleLoopSection .container .rightBox .loopDetails h1 span{color:#72757f;font-family: 'Montserrat', sans-serif;
-                    font-size: 40px;
-                    font-weight: 700;
-                    line-height: 28px;}
-                    .tripleLoopSection .container .rightBox .loopDetails ul{width:380px;display:flex;flex-direction:column;gap:4px;}
-            .tripleLoopSection .container .rightBox .loopDetails ul li p{
-                font-family: 'Inter', sans-serif;
-                font-size: 15px;
-                font-weight: 400;
-                line-height: 23px;
-                letter-spacing: 0.031em;
-                
-                
-                color:#69696e;
-            }
-                .tripleLoopSection .container .rightBox .loopDetails:hover::after{content:"";position:absolute;width:7px;height:100%;background:rgb(164, 164, 164);border-top-right-radius: 10px;border-bottom-right-radius:10px; ;}
-                .tripleLoopSection .container .rightBox .loopDetails:hover h1{color:#202124;}
-                .tripleLoopSection .container .rightBox .loopDetails:hover h1 span{color:#202124;}
-                .tripleLoopSection .container .rightBox .loopDetails:hover ul li p{color:#101011;}
-
-                /* sixth section */
-                .sixthSection{display:grid;grid-template-columns:2fr 1fr;gap:30px;align-items:space-evenly;;padding:50px 62px;background:rgba(249, 249, 249, 1);
-                    background-image:url('Resources/backgroundTexture.png');
-                    background-size:cover;
-                    background-repeat:no-repeat;
-                    ;;;}
-                .sixthSection .contentBox{display:flex;justify-content:center;flex-direction:column;align-items:center;}
-                .sixthSection img{max-width:280px;;
-                    
-                   
-                    
-                    }
-                    .sixthSection h2{
-                        font-family: 'Montserrat', sans-serif;
-                        font-size: 26px;
-                        font-weight: 600;
-                        line-height: 60px;
-                        text-align:center;
-                        color:rgba(43, 43, 43, 1);;
-                        
-                        }
-                        .sixthSection p{                            
-                            font-family: 'Inter', sans-serif;
-                            font-size: 17px;max-width:600px;
-                            font-weight: 400;color:rgba(43, 43, 43, 1);
-                            line-height: 30px;
-                            letter-spacing: 0.02em;
-                            text-align:center;margin-top:2px;
-                      
-                            
-                      
-                            
-                            
-                            }
-                            .sixthSection p span{
-                                font-family: 'Inter', sans-serif;
-                                font-size: 19px;
-                                font-weight: 600;
-                                line-height: 30px;
-                                letter-spacing: 0.02em;
-                                text-align: center;}
-
-      /* About founder Section */
-    .founderSection{padding:60px 92px 80px;;;}
-    .founderSection h1{
-        font-family: 'Montserrat', sans-serif;color:rgba(43, 43, 43, 1);
-      
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 60px;
- 
-        }
-    .founderSection .contentBox{display:flex;;gap:50px;margin-top:0px;align-items:start;justify-content:space-between;}
-    .founderSection .contentBox .about{display:flex;flex-direction:column;gap:10px;}
-    .founderSection .contentBox .about p{
-       font-family: 'Inter', sans-serif;
-font-size: 15px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.04em;
-
-
-
-      color:rgba(43, 43, 43, 1);;
-          
-          
-            
-
-
-        }
-        .founderSection .contentBox .about p span{
-            font-family: 'Inter', sans-serif;
-font-size: 15px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.04em;
-text-align: left;
-
-        }
-    .founderSection .contentBox img{
-        max-width: 340px;
-max-height: 370px;
-
-border-radius: 8px;
-
-
-        margin-top:-50px;
-       
+<p>When the <span>leadership team</span> is not aligned, the entire organisation gets impacted negatively.</p>
+<p>Dealing with challenges in top teams <span>require expertise and experience</span>. We have helped top teams of large number of organisations in the past to come together and <span>create a new aspiration and identity</span>.</p>
+<p>Similarly, curating a leadership development journey and deliver that for your mid and senior people is a strategic initiative that require thoughtful considerations. We understand the impact a <span>leadership development initiative</span> can create in organisations and have done this for large number of clients.</p>
         
-        }
-
-        /* trusted by client section */
-        .trustedBy{padding:40px 72px;;;;
-                    background-image:url('Resources/backgroundTexture.png');
-                    background-size:cover;
-                    background-repeat:no-repeat;
-            ;;}
-        .trustedBy h1{
-            font-family: 'Montserrat', sans-serif;color:rgba(43, 43, 43, 1);
-            
-            font-size: 25px;
-            font-weight: 600;
-            line-height: 60px;
-           
-            }
-            .trustedBy p{
-                font-family: 'Work Sans', sans-serif;
-font-size: 15px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.02em;
-text-align: left;
-
+</div>
                 
-                color:rgba(43, 43, 43, 1);
+                    <!-- <button>Our Unique Triple Loop Methodology</button> -->
+            </div>
+            <img src="Resources/d1.png" data-aos="zoom-in" alt=""/>
+         </div>
+
+         <!-- banner just down -->
+          <!-- <div class="additionalSection">
+            <p>When the <span>leadership team</span> is lot aligned, the entire organisation gets impacted negatively. Dealing with challenges in top teams require expertise and experience. We have helped top teams of large number of organisations in the past to come together, create a new aspiration and identity.</p>
+            <p>Similarly, curating a <span>leadership development</span> journey and deliver that for your mid and senior people is a strategic initiative that require thoughtful considerations. We understand the impact a leadership development initiative can create in organisations and have done this for large number of clients.</p>
+          </div> -->
+
+         <!-- Our Expertise -->
+          <div class="expertiesContainer" data-aos="slide-up">
+            <h1>Our Expertise</h1>
+            <div class="expertiesCardBox">
+                <div class="expertiesCard">
+                    <div class="imageBox">
+                         <img src="Resources/p1.png" data-aos="zoom-in" alt="icon"/>
+                     </div>
+                    <div class="cardContent">
+                        <p>Leadership Development</p>
+                        <button>View Projects</button>
+                    </div>
+                </div>
                 
-              margin-top:10px;
-                }
-                .trustedBy .trustedContainer{display:flex;align-items: center;margin:30px 0;;}
-                .trustedBy .trustedContainer .arrow{width:24px;height:24px;opacity:0.6;}
-                .trustedBy .trustedContainer .leftArrow{opacity:0.2;}
-
-                .trustedBy .trustedContainer .logoBox{display:grid;grid-template-columns:1fr 1fr 1fr 1fr 1fr;margin:0 auto;padding:0 20px 0 30px;row-gap:20px;column-gap:60px;;}
-                .trustedBy .trustedContainer .logoBox .companyLogo{max-height:140px;max-width:140px;padding:10px;}
-
-
-
-
-        /* testimonial section */
-        .testimonialBox{padding:55px 62px 70px;}
-        .testimonialBox h1{
-            font-family: 'Montserrat', sans-serif;color:rgba(43, 43, 43, 1);
-      
-            font-size: 25px;
-            font-weight: 600;
-            line-height: 60px;
-text-align: center;
-
-
-            }
-            .testimonialBox .box{display:flex;align-items:center;margin:40px 0 0;}
-            .testimonialBox .box .arrow{width:24px;height:24px;opacity:0.6;}
-            .testimonialBox .box .leftArrow{opacity:0.2;}
-           
-            .testimonialBox .testimonialContainer {display:grid;grid-template-columns: 1fr 1fr;}
-            .testimonialBox .testimonialContainer .messageBox{padding:0 70px;display:flex;flex-direction:column;gap:4px;}
-           
-            .testimonialBox .testimonialContainer .messageBox .messageHeading{
-                font-family: 'Inter', sans-serif;
-font-size: 15px;
-font-weight: 500;
-line-height: 22px;
-
-}
-            .testimonialBox .testimonialContainer .messageBox p{
-                 font-family: 'Inter', sans-serif;
-font-size: 14px;
-font-weight: 400;
-line-height: 21px;
-color:rgba(43, 43, 43, 1);
-
-
-
-
-             
-                
-                }
-    
-                    .testimonialBox .testimonialContainer .messageBox .message span{color:rgba(83, 140, 209, 1);}
-                    .testimonialBox .testimonialContainer .messageBox .messageBy{display:flex;align-items:center;margin-top:15px;}
-                    .testimonialBox .testimonialContainer .messageBox .messageBy img{max-width:50px;}
-                    .testimonialBox .testimonialContainer .messageBox .messageBy .personDetails{display:flex;flex-direction:column;margin-left:22px;
-                       
-                        
-                       
-                      }
-                    .testimonialBox .testimonialContainer .messageBox .messageBy .name{
-                        font-family: 'Work Sans', sans-serif;
-font-size: 14px;
-font-weight: 500;
-line-height: 21.87px;
-color:rgba(0, 0, 0, 1);
-
-   
-                        }
-                        .testimonialBox .testimonialContainer .messageBox .messageBy .aboutPerson{
-                            font-family: Work Sans;
-                            font-size: 14px;
-                            font-weight: 400;
-                            line-height: 21.87px;
-                           
-                            
-                           color:rgba(43, 43, 43, 1);;;
-                            
-                            }
-                            .testimonialBox .testimonialContainer .firstMessageBox{position:relative;;;}
-                            .testimonialBox .testimonialContainer .firstMessageBox::after{content:"";width:0.7px;height:90%;;;;background:rgb(198, 198, 198);position:absolute;top:10px;bottom:10px;right:0;}
-
-    /* video section */
-    .videoSection{padding:78px 90px;display:flex;justify-content:center;;align-items:center;gap:50px;
-        background-image:url('Resources/backgroundTexture.png');
-        background-size:cover;
-        background-repeat:no-repeat;
-        
-        
-        ;;}
-        .videoSection .videoThumbnail{display:flex;position:relative;justify-content:center;align-items:center;
-           
-        }
-        .videoSection .videoThumbnail img{max-width:740px;}
-        .videoSection .videoThumbnail .playButton{cursor:pointer;max-width:60px;position:absolute;}
-    .videoSection .video{border-radius:8px;max-width:840px;
-        max-height:473px;
-        
-        }
-        .videoSection .butterfly{max-width:140px;
-            max-height: 300px;
-            
-            }
-
-    /* second last section */
-    .secondLast{padding:70px 72px;display:flex;gap:10px;justify-content:center;align-items:center;;}
-    .secondLast img{max-width: 240px;
-        max-height: 200px;
-        
-        
-        }
-     .secondLast .secondLastContainer{display:flex;flex-direction:column;text-align:center;}
-     .secondLast .secondLastContainer h1{
-       
-        font-family: 'Montserrat', sans-serif;color:rgba(43, 43, 43, 1);;;
-            text-align:center;
-           
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 60px;
-           
-            
-       
-        }
-        .secondLast .secondLastContainer  button{font-family: 'Inter', sans-serif;
-            
-font-size: 16px;
-font-weight: 500;
-line-height: 68px;
-
-
-         background:white;
-            max-height:30px;display:flex;justify-content:center;align-items:center;margin:30px auto 20px;padding:16px 70px;
-            border:2px solid rgba(107, 101, 101, 1);border-radius:4px;color:#000000;
-            
-            }
-            .secondLast .secondLastContainer p{font-family: 'Montserrat', sans-serif;
-               
-                font-size: 22px;
-                font-weight: 600;
-                line-height: 60px;
+                <div class="expertiesCard centerCard">
+                    <div class="imageBox">
+                        <img src="Resources/p2.png" data-aos="zoom-in" alt="icon"/>
+                    </div>
+                    <div class="cardContent">
+                    <p>Team Development</p>
+                    <button>View Projects</button>
+                    </div>
+                </div>
+                <div class="expertiesCard">
+                    <div class="imageBox">
+                        <img src="Resources/p3.png" data-aos="zoom-in" alt="icon"/>
+                    </div>
+                    <div class="cardContent">
+                    <p>Capability Building</p>
+                    <button>View Projects</button>
+                    </div>
+                </div>
+                <div class="expertiesCard">
+                    <div class="imageBox">
+                        <img src="Resources/p4.png" data-aos="zoom-in" alt="icon"/>
+                    </div>
+                    <div class="cardContent">
+                    <p>Capability Building</p>
+                    <button>View Projects</button>
+                    </div>
+                </div>
               
-               color:#000000;
-                }
+                <div class="expertiesCard centerCard">
+                    <div class="imageBox">
+                        <img src="Resources/p5.png" data-aos="zoom-in" alt="icon"/>
+                    </div>
+                    <div class="cardContent">
+                    <p>Vision, Mission and Values</p>
+                    <button>View Projects</button>
+                    </div>
+                </div>
+                <div class="expertiesCard">
+                    <div class="imageBox">
+                        <img src="Resources/p6.png" data-aos="zoom-in" alt="icon"/>
+                    </div>
+                    <div class="cardContent">
+                    <p>One on One Coaching for CXOs</p>
+                    <button>View Projects</button>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+
+          <!-- 4th section -->
+           <div class="fourthSection" data-aos="slide-up">
+            <p class="firstLine"  >Everything we do we use our unique model</p>
+            <p class="secondLine"  ><span>"Triple Loop Learning"</span> to create <span>"Depth & Impact"</span></p>
+           <img src="Resources/p8.png"  alt=""/>
+<pre class="thirdLine" >
+We not only focus on the “doing” side of Leadership but also on the “thinking” 
+and “being” part. Who we are <span>“being”</span> influences the 
+<span>goals we set</span> and the <span>results we get</span>.
+</pre>
+           <!-- //<p class="fourthLine" >Who we are <b>“being”</b> influences the goals we set and the results we get.</p> -->
+        </div>
 
 
+        <!-- Triple loop Learning -->
+         <div class="tripleLoopSection" data-aos="slide-up">
+            <h1>Triple loop Learning</h1>
+            <div class="container">
+                <img src="Resources/f1.png" data-aos="zoom-in-left" alt="face"/>
+                <div class="rightBox" data-aos="slide-up">
+                    <div class="loopDetails">
+                        <h1><span>01</span><br>SINGLE<br>LOOP</h1>
+                        <ul>
+                            <li data-aos="slide-up"><p>Learning new skills and capabilities</p></li>
+                            <li data-aos="slide-up"><p>Incremental improvement</p></li>
+                            <li data-aos="slide-up"><p>Doing something better without examining or challenging underlying beliefs and assumptions.</p></li>
+                        </ul>
+                    </div>
 
-                /* footer */
-  
+                    <div class="loopDetails">
+                        <h1><span>02</span><br>DOUBLE<br>LOOP</h1>
+                        <ul>
+                            <li><p>Fundamentally reshaping the underlying patterns of our thinking and behavior.</p></li>
+                            <li><p>As a result we're capable of doing different things.</p></li>
+                            <li><p>Going beyondsingle-loop or incremental learning.</p></li>
+                        </ul>
+                    </div>
 
- footer{padding:50px 100px 0;;
-    background-image:url('Resources/backgroundTexture.png');
-        background-size:cover;
-        background-repeat:no-repeat;
-    
-    ;}
-  
-    .logoBox {margin-bottom:27px;
-        display: flex;
-        align-items: center;justify-content:space-between;
-    }
+                    <div class="loopDetails">
+                        <h1><span>03</span><br>TRIPPLE<br>LOOP</h1>
+                        <ul>
+                            <li><p>It involves "learning how to learn" by reflecting on how we learn in the first place.</p></li>
+                            <li><p>This is about learning how our "begin" influence our beliefs and thus our actions.</p></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
 
-    .logoBox .companyLogo {
-        max-width: 114px;
-        max-height:74px;;
-    }
+         <!-- 6th section -->
+          <div class="sixthSection" data-aos="slide-up">
+            <div class="contentBox">
+                <h2>We address both Visible and Hidden factors</h2>
+                <p>When we address only the visible factors, we don't create lasting change, our expertise <span>triple loop methodologies</span> help us to <span>understand the hidden factors</span> and <span>address them</span>.</p>
 
-    .social-icons {
-        display: flex;
-        align-items: center;gap:40px;
-    }
+            </div>
+            <img src="Resources/1.png" data-aos="flip-up" alt="circle"/>
+          </div>
 
-    .social-icons a {
-        display: inline-block;
-        margin-right: 10px;
-    }
+          <!-- about section -->
+           <div class="founderSection" data-aos="slide-up">
+            <h1>About the Founder</h1>
+            <div class="contentBox">
+                <div class="about">
+                    <p data-aos="slide-up">Santhosh is passionate about supporting leadership teams in <span>creating new possibilities</span> that add value to all stakeholders. He started ODA in <span>1998</span> and has worked with more than 300 clients in the past cross the globe. Santhosh is the author of  <span>India’s first book on coaching  published by Wiley</span> and started the first coach training program in 2006 in India. He is also an awardee of Life Time Achievement Award from Gestalt Institute, USA and selected as a Thinkers 50 in 2014. Santhosh used to write a column in Business Today called <span>"Buddha in the Boardroom"</span>.</p>
+                    <p data-aos="slide-up">Santhosh coach some of the CEOs and work with several leadership  teams <span>driving transformation, culture change and leadership Development</span>. Before starting ODA, Santhosh worked as a primary school teacher in Bhutan and as an Environmental Education Offer with World Wildlife Fund.</p>
+                </div>
+                <img src="Resources/founder.png" data-aos="fade-up" alt="founder image"/>
 
-    .social-icons a img {
-        width: 30px;
-      
-    }
-    .social-icons a .youTube{width:45px;}
+            </div>
+           </div>
 
-    .content {
-        display: flex;
-        justify-content: space-between;
-        
-    }
 
-    .links {
-        width: 200px;
-    }
+           <!-- trusted section -->
+           <div class="trustedBy" id="clients">
+              <h1>Trusted by Industry Leaders</h1>
+              <p>Through our seminal body of work over the last two decades, we can understand the distinctiveness of the clients we have supported in terms of their challenges and aspirations and have assisted them in their growth trajectory.</p>
+              <div class="trustedContainer">
+                <img src="Resources/leftarrow.png" class="arrow leftArrow" alt="arrow"/>
+                <div class="logoBox">
+                    <img src="Resources/image 30.png" class="companyLogo" alt="logo"/>
+                    <img src="Resources/image 34.png" class="companyLogo" alt="logo"/>
+                    <img src="Resources/image 32.png" class="companyLogo" alt="logo"/>
+                    <img src="Resources/image 33.png" class="companyLogo" alt="logo"/>
+                    <img src="Resources/image 31.png" class="companyLogo" alt="logo"/>
 
-    .links h3 {position:relative;
-        margin-bottom: 20px;
-        font-family: 'Work Sans', sans-serif;
-font-size: 13px;
-font-weight: 600;
-line-height: 15.4px;
-letter-spacing: 0.04em;
-text-align: left;
-color:rgba(18, 28, 38, 1);margin-left:14px;
-    }
-    .links h3::before{content:"";position:absolute;width:6px;left:-14px;height:6px;;top:5px;border:1px solid rgba(44, 113, 246, 1);border-radius:50%;}
+                    <img src="Resources/image 30.png" class="companyLogo" alt="logo"/>
+                    <img src="Resources/image 34.png" class="companyLogo" alt="logo"/>
+                    <img src="Resources/image 32.png" class="companyLogo" alt="logo"/>
+                    <img src="Resources/image 33.png" class="companyLogo" alt="logo"/>
+                    <img src="Resources/image 31.png" class="companyLogo" alt="logo"/>
+                </div>
+                <img src="Resources/rightarrow.png" class="arrow" alt="arrow"/>
+              </div>
+            </div>
 
-    .links a {text-decoration:none;
-        display: block;
-        margin-bottom: 3px;
-        font-family: 'Inter', sans-serif;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 19.6px;
-      
-        
-color:rgba(43, 43, 43, 1);;
+            <!-- testimonial section -->
+        <div class="testimonialBox">
+            <h1>Client Testimonial</h1>
+<div class="box">
+            <img src="Resources/leftarrow.png" class="arrow leftArrow" alt="leftarrow"/>
+            <div class="testimonialContainer">
 
-    }
+                <div class="messageBox firstMessageBox">
+                    <p class="messageHeading">"Effective at helping the business leaders achieve desired outcomes"</p>
+                    <p class="message">Successful organizational design and development outcomes require intricate internal navigation and a fine balance of using multiple ... <span>read more</span></p>
+                    <div class="messageBy">
+                        <img src="Resources/p9.png" alt="profile"/>
+                        <div class="personDetails">
+                            <p class="name">ANIMESH KUMAR</p>
+                            <p class="aboutPerson">Head- HR, Brand Foundation, IDFC Bank</p>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="messageBox ">
+                    <p class="messageHeading">"Simplicity of delivery, insightful anecdotes and expertise in human behaviour..."</p>
+                    <p class="message">Refreshing Mission Vision and Values for an organization can be a fairly energizing and unifying experience, if handled deftly ... <span>read more</span></p>
+                    
+                    <div class="messageBy">
+                        <img src="Resources/p10.png" alt="profile"/>
+                        <div class="personDetails">
+                            <p class="name">RAJESH SUD</p>
+                            <p class="aboutPerson">Managing Director, Max life Insurance...</p>
+                            <!-- Managing Director, Max life Insurance Co. Ltd, Max Bupa Health Insurance Co. Ltd -->
+                        </div>
+                    </div>
+                </div>
 
-    .info {margin-left:130px;
-        width: 200px;
-    }
-
-    .info h3 {position:relative;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 13px;
-        font-weight: 600;
-        line-height: 15.4px;
-        letter-spacing: 0.04em;
-     
-        
+            </div>
+            <img src="Resources/rightarrow.png" class="arrow" alt="rightarrow"/>
                 
-        
-        color:rgba(38, 46, 54, 1);
-     
-        
-        margin-bottom: 12px;margin-left:14px;
-    }
-    .info h3::before{content:"";position:absolute;width:6px;left:-14px;height:6px;;top:4px;border:1px solid rgba(44, 113, 246, 1);border-radius:50%;}
+                </div>
 
-    .info p {font-family: 'Inter', sans-serif;color:rgba(43, 43, 43, 1);;
-      
-        
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 19.6px;
-       
-        
-        
-        margin-bottom: 35px;
-    }
-
-    .subscription {text-align:right;
-        min-width: 300px;
-    }
-    .subscription p{max-width:280px;;margin-left:auto;
-        font-family: 'Work Sans', sans-serif;;
-font-size: 15px;
-font-weight: 400;
-line-height: 22.4px;
-text-align: right;
-
-        
-        
-        color:rgba(43, 43, 43, 1);;
-        }
-
-    .subscription h3 {position:relative;;margin:15px 0 18px 0;color:rgba(38, 46, 54, 1);;
-        font-family: 'Work Sans', sans-serif;
-
-       
-font-size: 13px;
-font-weight: 600;
-line-height: 15.4px;
-letter-spacing: 0.04em;
-
-
-      
-        
-       
-    }
-    .subscription h3::before{content:"";position:absolute;width:6px;left:-14px;height:6px;;top:5px;border:1px solid rgba(44, 113, 246, 1);border-radius:50%;}
-
-    .subscription input[type="email"] {width:200px;height:35px;
-        padding: 0px 16px;background:rgba(249, 249, 249, 1);;
-        border: 2px solid rgba(107, 101, 101, 1);border-right:0;
-        border-radius: 5px 0 0 5px;
-       
-        margin-bottom: 0px;
-        font-family: 'Work Sans', sans-serif;;
-font-size: 14px;
-font-weight: 400;
-line-height: 19.6px;
-color:rgba(172, 172, 172, 1);;
-
-margin-right:-5px;
-
-
-    }
-
-    .subscription button {width:178px;height:35.5px;background:rgba(51, 50, 50, 1);color:rgba(255, 255, 255, 1);
-        font-family: 'Work Sans', sans-serif;;
-font-size: 14px;
-font-weight: 700;
-line-height: 19.6px;
-
-
-        padding: 0 20px;border:none;
-        
-       
-       
-        border-radius: 0 5px 5px 0;border:none;
-        cursor: pointer;
-
-    }
-    .bottomFooter{display:flex;justify-content:space-between;padding:47px 0;;
-    }
-    .bottomFooter p{
-    
-
-        font-family: 'Inter', sans-serif;;color:#4B4D50;;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 16.8px;
-        
-        }
-        .bottomFooter a{font-family: 'Inter', sans-serif;
-            font-size: 12px;color:#4B4D50;text-decoration:none;
-            font-weight: 400;
-            line-height: 16.8px;
             
-            }
+            </div>
+
+
+            <!-- video section -->
+             <div class="videoSection" id="projects">
+                <img src="Resources/leftBird.png" class="butterfly" alt="butterfly"/>
+                <div class='videoThumbnail'>
+                    <img src="Resources/v1.png" class="video" alt="video"/>
+                    <img src="Resources/round-play-button.png" class="playButton" alt="video"/>
+                </div>
+                <img src="Resources/rightBird.png" class="butterfly" alt="butterfly"/>
+             </div>
+
+             <!-- second last section -->
+              <div class="secondLast">
+                <img src="Resources/v2.png" alt="fish"/>
+                <div class="secondLastContainer">
+                    <h1>JOIN THE TRANSFORMATION DISCUSSION</h1>
+                    <button>Get OD Publication</button>
+                    <p>Let us be a part of your success story...</p>
+                </div>
+                <img src="Resources/v3.png" alt="fish"/>
+              </div>
+
+
+
+              <!-- footer -->
+               <!-- <div class="footer">
+
+                <div class="footerContainer">
+                    <img src="Resources/odal.png" class="companyLogo" alt="logo"/>
+                    <div classs="rightLogo">
+                        <img src="Resources/yu.png" alt=""/>
+                        <img src="Resources/ln.png" alt=""/>
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <p>QUICK LINKS</p>
+                        <p>Projects</p>
+                        <p>Events</p>
+                        <p>OD certification</p>
+                        <p>Clients</p>
+                        <p>About US</p>
+                        <p>Terms & Conditions</p>
+                        <p>Privacy Policy</p>
+                    </div>
+
+                    <div>
+                        <p>SALES</p>
+                        <p>info@mysite.com</p>
+                        <p>Customer Care:</p>
+                        <p>info@mysite.com</p>
+                    </div>
+
+                    <div>
+                        <p>OD Alternative Consultancy Pvt Ltd,
+                            A-6/280 B DDA Flats
+                            Paschim Puri
+                            New Delhi 110018</p>
+                        <p>Sign up to get the latest news on our product.</p>
+
+                        <div>
+                            <input type="text" placeholder="Add Email" />
+                            <button>Subscribe</button>
+                            </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p>© 2023 — Copyright</p>
+                    <p>Privacy</p>
+                </div>
+
+               </div> -->
+
+              <footer>
+              
+                    <div class="logoBox">
+                        <img src="Resources/logo-black.png" class="companyLogo" alt="ODA Logo">
+                     <div class="social-icons">
+                         <a href="https://www.youtube.com/user/Wix">          <img src="Resources/yu.png" class="youTube" alt="Play"></a>
+                         <a href="https://www.linkedin.com/company/wix-com/"> <img src="Resources/ln.png" alt="LinkedIn"></a>
+                     </div>
+                    </div>
+               
+                  
+                <div class="content">
+                    <div class="links">
+                        <h3>QUICK LINKS</h3>
+                        <a href="#projects">Projects</a>
+                        <a href="#events">Events</a>
+                        <a href="https://odcertification.com/">OD certification</a>
+                        <a href="#clients">Clients</a>
+                        <a href="#">About US</a>
+                       
+                    </div>
+                    <div class="info">
+                        <h3>SALES</h3>
+                        <p>info@mysite.com</p>
+                        <h3>CUSTOMER CARE:</h3>
+                        <p>info@mysite.com</p>
+                    </div>
+                    <div class="subscription">
+                        <p>OD Alternative Consultancy Pvt Ltd,
+                            A-6/280 B DDA Flats
+                            Paschim Puri
+                            New Delhi 110018</p>
+                        <h3>SIGN UP TO GET THE LATEST NEWS ON OUR PRODUCT.</h3>
+                        <input type="email" placeholder="Add Email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+                <div class="bottomFooter">
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>
+                </div>
+              </footer>
+        
+
+
+           
+    </div>
+
+     <!-- animation -->
+      <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,duration: 1100
+
+        });
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+      
+
+   
