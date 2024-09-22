@@ -390,7 +390,7 @@ border-radius: 8px;
         }
 
         /* trusted by client section */
-        .trustedBy{padding:40px 72px;;;;
+        .trustedBy{padding:40px 0px;;;;
                     background-image:url('Resources/backgroundTexture.png');
                     background-size:cover;
                     background-repeat:no-repeat;
@@ -400,11 +400,11 @@ border-radius: 8px;
             
             font-size: 25px;
             font-weight: 600;
-            line-height: 60px;
+            line-height: 60px;padding:0 72px;
            
             }
-            .trustedBy p{
-                font-family: 'Work Sans', sans-serif;
+            .trustedBy p{padding:0 72px;
+                font-family:'Inter', sans-serif;
 font-size: 15px;
 font-weight: 400;
 line-height: 24px;
@@ -745,3 +745,72 @@ line-height: 19.6px;
             line-height: 16.8px;
             
             }
+/* trusted by */
+
+.logo-scroller-container {
+    display: flex;margin-top:20px;
+    align-items: center;
+    width: 100%; /* Full screen width */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: scroll;
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .logo-wrapper::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .logo-row {
+    display: flex;gap:40px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .logo-row img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo-row img:hover {
+    transform: scale(1.1); /* Zoom effect */
+    z-index: 10; /* Bring the hovered logo to the front */
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999; /* Make sure buttons stay on top */
+  }
+  
+  #scroll-left {
+    left: 20px;
+  }
+  
+  #scroll-right {
+    right: 20px;
+  }
+  
+  .scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Pause animation on hover */
+  .logo-wrapper:hover {
+    animation-play-state: paused;
+  }
+  
